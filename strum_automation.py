@@ -22,6 +22,7 @@ Usage:
 """
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -40,6 +41,10 @@ SERVICE_ACCOUNT_PATH = os.path.expanduser("~/.claude/google-service-account.json
 REPO_DIR = Path(__file__).parent
 GITHUB_RAW_BASE = "https://raw.githubusercontent.com/66fishmarket-droid/StrumSocials/main"
 
+# Guardrail files — fail-closed verification for autonomous Canva runs
+VERIFICATION_LOG = REPO_DIR / "verification.json"
+KNOWN_BAD_HASHES_FILE = REPO_DIR / "known_bad_hashes.json"
+
 SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.readonly",
@@ -53,6 +58,10 @@ TEMPLATES = {
         "elements": {
             "factoid": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
             "date": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+        },
+        "placeholders": {
+            "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
+            "date": "{{Date}}",
         },
         "columns": {
             "status": 0,       # A
@@ -84,6 +93,11 @@ TEMPLATES = {
             "artist": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
             "mood_tags": "PBjpwX1gm3tngz74-LB3MbCD0NYZyjQmv",
         },
+        "placeholders": {
+            "song_title": "{{Song Title}}",
+            "artist": "{{Artist}}",
+            "mood_tags": "{{Mood Tags}}",
+        },
         "columns": {
             "title": 0,         # A
             "artist": 1,        # B
@@ -102,14 +116,185 @@ TEMPLATES = {
     "trivia": {
         "sheet": "Trivia Seeds",
         "design_id": "DAG32T-T8gU",
-        "elements": {},  # not yet mapped
+        "elements": {
+            "question": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+            "option_a": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
+            "option_b": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
+            "option_c": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
+        },
+        "placeholders": {
+            "question": "{{Question}}",
+            "option_a": "A. {{Option A}}",
+            "option_b": "B. {{Option B}}",
+            "option_c": "C. {{Option C}}",
+        },
     },
     "event": {
         "sheet": "Event Promo",
         "design_id": "DAG3d3prj-Y",
         "elements": {},  # not yet mapped
+        "placeholders": {},
     },
 }
+
+
+# ── Guardrails: hashing + verification log ─────────────────────────────────
+#
+# Fail-closed checks that prevent broken template exports from being marked
+# complete. Every Canva export must pass verify_image() before the sheet or
+# git commit pipeline will accept it.
+#
+# Files:
+#   verification.json      — per-filename proof of passing verification
+#   known_bad_hashes.json  — per-template blocklist (stale template bytes etc.)
+#
+# verification.json schema:
+#   {
+#     "<filename>": {
+#       "hash": "<sha256 hex>",
+#       "template": "<design_id>",
+#       "verified_at": "<iso timestamp>",
+#       "bytes": <int>
+#     },
+#     ...
+#   }
+#
+# known_bad_hashes.json schema:
+#   {
+#     "<design_id>": ["<sha256 hex>", ...],
+#     ...
+#   }
+
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(65536), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def load_verification_log() -> dict:
+    if not VERIFICATION_LOG.exists():
+        return {}
+    with open(VERIFICATION_LOG, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_verification_log(log: dict) -> None:
+    with open(VERIFICATION_LOG, "w", encoding="utf-8") as f:
+        json.dump(log, f, indent=2, ensure_ascii=False)
+
+
+def load_known_bad_hashes() -> dict:
+    if not KNOWN_BAD_HASHES_FILE.exists():
+        return {}
+    with open(KNOWN_BAD_HASHES_FILE, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_known_bad_hashes(data: dict) -> None:
+    with open(KNOWN_BAD_HASHES_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+def mark_hash_bad(design_id: str, file_hash: str) -> None:
+    """Add a hash to the known-bad list for a template."""
+    bad = load_known_bad_hashes()
+    bucket = bad.setdefault(design_id, [])
+    if file_hash not in bucket:
+        bucket.append(file_hash)
+    save_known_bad_hashes(bad)
+
+
+def verify_image(filename: str, content_type: str) -> tuple[bool, str]:
+    """Per-image fail-closed check.
+
+    Returns (ok, reason). On success, appends an entry to verification.json.
+    On failure, does NOT write to the log — the file cannot advance through
+    the pipeline until re-exported and re-verified.
+
+    Failure modes caught:
+      - File missing or too small (export failed)
+      - Hash matches a known-bad template hash for this design
+      - Hash matches another filename's hash in the current log
+        (two exports producing identical bytes = stale template)
+    """
+    tmpl = TEMPLATES.get(content_type)
+    if not tmpl:
+        return False, f"unknown content type: {content_type}"
+
+    design_id = tmpl["design_id"]
+    jpg_path = REPO_DIR / f"{filename}.jpg"
+
+    if not jpg_path.exists():
+        return False, f"file not found: {jpg_path.name}"
+
+    size = jpg_path.stat().st_size
+    if size < 10_000:
+        return False, f"file too small ({size} bytes) — export likely failed"
+
+    file_hash = sha256_file(jpg_path)
+
+    # Check known-bad list for this template
+    bad = load_known_bad_hashes()
+    if file_hash in bad.get(design_id, []):
+        return False, f"hash matches known-bad template bytes for {design_id}"
+
+    # Check for dup against previously verified files (same template only —
+    # different templates legitimately share no bytes, but two OTD images
+    # with identical bytes means stale template state).
+    log = load_verification_log()
+    for other_name, entry in log.items():
+        if other_name == filename:
+            continue
+        if entry.get("template") != design_id:
+            continue
+        if entry.get("hash") == file_hash:
+            return False, (
+                f"duplicate hash — matches '{other_name}' from same template; "
+                "stale template state suspected"
+            )
+
+    # Passed. Record proof.
+    log[filename] = {
+        "hash": file_hash,
+        "template": design_id,
+        "verified_at": datetime.now(timezone.utc).isoformat(),
+        "bytes": size,
+    }
+    save_verification_log(log)
+    return True, f"ok ({size:,} bytes, {file_hash[:12]})"
+
+
+def infer_content_type(filename: str) -> str | None:
+    """Best-effort map from an image filename (no extension) to content type,
+    based on the naming conventions already in the repo."""
+    base = filename.rsplit("/", 1)[-1]
+    if base.startswith("otd_"):
+        return "otd"
+    if base.startswith("SongOfTheDay_"):
+        return "sotd"
+    if base.startswith("trivia-") or base.startswith("trivia_"):
+        return "trivia"
+    if base.startswith("Feed_") or base.startswith("Poster_") or base.startswith("RealPoster_"):
+        return "event"
+    return None
+
+
+def is_verified(filename: str, content_type: str) -> bool:
+    """Check whether a filename has a passing entry in the verification log
+    matching its current on-disk hash. Used by gated update/commit."""
+    jpg_path = REPO_DIR / f"{filename}.jpg"
+    if not jpg_path.exists():
+        return False
+    log = load_verification_log()
+    entry = log.get(filename)
+    if not entry:
+        return False
+    tmpl = TEMPLATES.get(content_type, {})
+    if entry.get("template") != tmpl.get("design_id"):
+        return False
+    return entry.get("hash") == sha256_file(jpg_path)
 
 
 # ── Google Sheets client ────────────────────────────────────────────────────
@@ -205,7 +390,31 @@ def cmd_batch(args):
         "content_type": content_type,
         "design_id": tmpl["design_id"],
         "elements": tmpl["elements"],
+        "placeholders": tmpl.get("placeholders", {}),
         "generated_at": datetime.now(timezone.utc).isoformat(),
+        "dry_run": bool(args.dry_run),
+        "halt_after_first": bool(args.dry_run),
+        # Autonomous protocol the MCP driver (Claude) MUST follow for this batch.
+        # Each step is fail-closed: if any check fails the batch aborts.
+        "driver_protocol": [
+            "1. PREFLIGHT: start-editing-transaction on design_id and read every",
+            "   element in `elements`. Every field must currently equal its value",
+            "   in `placeholders`. If not, perform revert edits to restore",
+            "   placeholders and commit-editing-transaction BEFORE any item edit.",
+            "2. For each item in `items`:",
+            "   a. start-editing-transaction",
+            "   b. perform-editing-operations (the item's `operations`)",
+            "   c. commit-editing-transaction  (NEVER export before commit)",
+            "   d. export-design as JPG quality 90",
+            "   e. curl download to <filename>.jpg",
+            "   f. python strum_automation.py verify -t <content_type> -f <filename>",
+            "      — if non-zero exit, ABORT the batch, do not update sheet.",
+            "   g. start-editing-transaction; revert operations; commit.",
+            "   h. If halt_after_first is true, STOP after item 1 and await",
+            "      explicit user confirmation before continuing.",
+            "3. After all items pass: python strum_automation.py update -t <content_type>",
+            "4. Then: python strum_automation.py commit -t <content_type>",
+        ],
         "items": [],
     }
 
@@ -245,8 +454,44 @@ def cmd_batch(args):
 
     print(f"Batch file written: {outfile}")
     print(f"Items: {len(batch['items'])}")
+    if batch["dry_run"]:
+        print("Mode: DRY RUN — driver will halt after first image for confirmation.")
     print(f"\nTo process in Claude Code, use:")
     print(f"  'Process the batch file {outfile.name} using the Canva MCP tools'")
+    print(f"\nDriver MUST follow the `driver_protocol` embedded in the JSON.")
+    print(f"Each export will be verified by: verify -t {content_type} -f <filename>")
+
+
+# ── Verify: per-image guardrail check (called after each Canva export) ────
+
+def cmd_verify(args):
+    """Per-image verification. Exits non-zero on failure so the MCP-driven
+    batch loop halts immediately instead of shipping broken content."""
+    content_type = args.type
+    filename = args.filename
+
+    if args.mark_bad:
+        jpg_path = REPO_DIR / f"{filename}.jpg"
+        if not jpg_path.exists():
+            print(f"FAIL: cannot mark bad — file missing: {jpg_path.name}")
+            sys.exit(2)
+        file_hash = sha256_file(jpg_path)
+        design_id = TEMPLATES[content_type]["design_id"]
+        mark_hash_bad(design_id, file_hash)
+        print(f"Marked {file_hash[:12]}... as known-bad for template {design_id}.")
+        # Also remove from verification log if present
+        log = load_verification_log()
+        if filename in log:
+            del log[filename]
+            save_verification_log(log)
+            print(f"Removed '{filename}' from verification log.")
+        return
+
+    ok, reason = verify_image(filename, content_type)
+    status = "PASS" if ok else "FAIL"
+    print(f"[{status}] {filename}: {reason}")
+    if not ok:
+        sys.exit(1)
 
 
 # ── Update: mark items as done in Google Sheets ────────────────────────────
@@ -259,13 +504,34 @@ def cmd_update(args):
 
     pending, _ = scan_pending(content_type)
     # Items where file exists locally but sheet says No
-    to_update = [p for p in pending if p["exists_locally"]]
+    candidates = [p for p in pending if p["exists_locally"]]
 
-    if not to_update:
+    if not candidates:
         print("No sheet updates needed — all existing images already marked.")
         return
 
-    print(f"Updating {len(to_update)} rows in '{tmpl['sheet']}'...")
+    # GUARDRAIL: only flip rows for files that have a matching verification
+    # log entry. Files dropped in the repo without passing verify_image()
+    # are refused — this closes the "HTTP 200 = success" failure mode.
+    to_update = []
+    skipped = []
+    for item in candidates:
+        if is_verified(item["filename"], content_type):
+            to_update.append(item)
+        else:
+            skipped.append(item)
+
+    if skipped:
+        print(f"REFUSED {len(skipped)} row(s) — no passing verification entry:")
+        for item in skipped:
+            print(f"  Row {item['row']:>3} | {item['filename']}")
+        print("  Run `verify -t <type> -f <filename>` first, or re-export.")
+
+    if not to_update:
+        print("\nNothing to update — all candidates failed verification gate.")
+        sys.exit(1)
+
+    print(f"\nUpdating {len(to_update)} verified rows in '{tmpl['sheet']}'...")
 
     # Batch update: set image_created = "Yes" for all matching rows
     # Column K = column 11 (1-indexed in gspread)
@@ -348,7 +614,40 @@ def cmd_commit(args):
         print("No new images to commit.")
         return
 
-    print(f"Found {len(new_images)} new/modified images:")
+    # GUARDRAIL: defense-in-depth. Every .jpg about to be committed must
+    # have a current, matching verification.json entry. Event/poster files
+    # whose type can't be inferred are refused rather than allowed — the
+    # script will NOT commit unverified content.
+    allowed = []
+    refused = []
+    for img in new_images:
+        stem = Path(img).stem
+        ctype = infer_content_type(stem)
+        if ctype is None:
+            refused.append((img, "unknown type (no content_type prefix)"))
+            continue
+        if not TEMPLATES[ctype].get("elements"):
+            # No templated content (e.g. event posters uploaded manually) —
+            # nothing for the guardrail to validate against, but we still
+            # refuse to auto-commit from the autonomous path.
+            refused.append((img, f"type '{ctype}' has no element mapping; commit manually"))
+            continue
+        if is_verified(stem, ctype):
+            allowed.append(img)
+        else:
+            refused.append((img, "no passing verification entry"))
+
+    if refused:
+        print(f"REFUSED {len(refused)} image(s):")
+        for path, reason in refused:
+            print(f"  {path}  —  {reason}")
+
+    if not allowed:
+        print("\nNothing to commit — verification gate rejected all candidates.")
+        sys.exit(1)
+
+    new_images = allowed
+    print(f"\nCommitting {len(new_images)} verified images:")
     for img in new_images:
         print(f"  {img}")
 
@@ -435,7 +734,23 @@ def main():
     # batch
     p_batch = sub.add_parser("batch", help="Generate batch file for Claude Code")
     p_batch.add_argument("-t", "--type", default="otd", choices=TEMPLATES.keys())
+    p_batch.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Emit batch with halt_after_first — driver must stop after image 1 for confirmation",
+    )
     p_batch.set_defaults(func=cmd_batch)
+
+    # verify (per-image guardrail)
+    p_verify = sub.add_parser("verify", help="Per-image guardrail check (exits non-zero on failure)")
+    p_verify.add_argument("-t", "--type", required=True, choices=TEMPLATES.keys())
+    p_verify.add_argument("-f", "--filename", required=True, help="Filename stem, no extension")
+    p_verify.add_argument(
+        "--mark-bad",
+        action="store_true",
+        help="Record this file's hash as known-bad for its template and remove from verification log",
+    )
+    p_verify.set_defaults(func=cmd_verify)
 
     # update
     p_update = sub.add_parser("update", help="Mark generated images in Sheets")
