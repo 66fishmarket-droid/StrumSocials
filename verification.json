@@ -10,5 +10,65 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-04-07T12:05:39.852644+00:00",
     "bytes": 128929
+  },
+  "SongOfTheDay_Florence_The_Machine_Dog_Days_Are_Over": {
+    "hash": "338d0a2c1b71be23352188563c67d05b89f24f9235dbf2b6feb4d9ef76b098ad",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-08T14:55:42.965523+00:00",
+    "bytes": 113389
+  },
+  "SongOfTheDay_Daft_Punk_ft_Pharrell_Williams_Lose_Yourself_to_Dance": {
+    "hash": "5658d92bc57ffd241c9dcebcb29fa8be2444d7fed036d59aa9366dab0ca0c26c",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-08T14:56:34.328382+00:00",
+    "bytes": 114186
+  },
+  "SongOfTheDay_Culture_Club_Karma_Chameleon": {
+    "hash": "3e035761f4ce1fc569b31ca7bf320feb54897acade581bb1a8f89df2b9715512",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-08T14:57:20.973551+00:00",
+    "bytes": 107972
+  },
+  "SongOfTheDay_Steve_Lacy_Bad_Habit": {
+    "hash": "e535a67939ad48821f67147098199687a5d26483b3020e0670fa6bd846356145",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-08T14:58:11.345955+00:00",
+    "bytes": 105946
+  },
+  "otd_2026-04-17_queen-mccartney-silk-sonic-hits": {
+    "hash": "68b587369bb12d282de4f77ec5d11dbed6f7d321bde499ddbe594440ca3ab911",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-08T16:19:28.424019+00:00",
+    "bytes": 145975
+  },
+  "otd_2026-04-18_beatles-jackson-drake-april-18": {
+    "hash": "59691afec7572ed3e3a2eaaf125045aa1b752057ec8eaf0f779586f8b632ad7f",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-14T14:03:06.213125+00:00",
+    "bytes": 135204
+  },
+  "otd_2026-04-19_swift-blondie-prince-bowie-april19": {
+    "hash": "0adcac59682d216373f858c0b62895f3cad3ad426f1091627c35bc79e283f9cf",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-14T14:04:17.109917+00:00",
+    "bytes": 131701
+  },
+  "otd_2026-04-20_elvis-ariana-chart-toppers": {
+    "hash": "d7e66f10d22bc4589d3607702bd8ac18e495ed127c67d66d3220861ca76bed22",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-14T14:05:24.572377+00:00",
+    "bytes": 127259
+  },
+  "otd_2026-04-21_elvis-drake-chart-toppers": {
+    "hash": "afae6083531fbc8ead7cba5df39ee55b153aa0585b1727b3ad4e041f2dc85625",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-14T14:06:35.325687+00:00",
+    "bytes": 131161
+  },
+  "otd_2026-04-22_madonna-prince-dre-april-hits": {
+    "hash": "81412750228e09ef058f29ebd41850e838911a699018e72c31212bb7bee159f5",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-14T14:07:37.498177+00:00",
+    "bytes": 132811
   }
 }
