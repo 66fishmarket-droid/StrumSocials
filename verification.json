@@ -70,5 +70,143 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-04-14T14:07:37.498177+00:00",
     "bytes": 132811
+  },
+  "trivia-flight-of-the-conchords-band": {
+    "hash": "15cbedd683dea893d5af42d94a6d6819cc3b19c07659032dc6ef6ef917aa7ae0",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-14T15:00:34.777694+00:00",
+    "bytes": 171425
+  },
+  "trivia-dua-lipa-future-nostalgia": {
+    "hash": "2d168560f90e9f6c8fea471df27097a18fc733c099f8a0ea8bdc04b252a01f43",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-14T15:10:38.989086+00:00",
+    "bytes": 159300
+  },
+  "trivia-thelonious-monk-round-midnight": {
+    "hash": "83632d7da91ab2243b02138b085726241cf3101891429c79322da55fa5bc0669",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-14T15:11:28.078538+00:00",
+    "bytes": 162294
+  },
+  "trivia-who-guitar-smash": {
+    "hash": "13cbff63d96724ac6c1ffb6e1f4580cf1df4d16d123d2858c9a3c49dd5056851",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-14T15:12:17.784405+00:00",
+    "bytes": 166900
+  },
+  "trivia-madonna-like-a-prayer": {
+    "hash": "48c6ed915ed2ef7bc3426a76429b670e46b7d75b4c1267040f0eb80cb99660cd",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-14T15:13:02.593287+00:00",
+    "bytes": 156607
+  },
+  "trivia-only-fools-nags-head": {
+    "hash": "9bfc3e3dc1e79b97a9989e8b79868ea18e214655fe98a6ecc710b79b61c2ad94",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-14T15:13:49.214729+00:00",
+    "bytes": 160815
+  },
+  "otd_2026-04-23_lemonade-sticky-fingers-eileen": {
+    "hash": "25b9942ebd03ad474a14e8b2c22ef202e5ecc7a19b80fee19c88469b29d4b228",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-15T13:24:09.248082+00:00",
+    "bytes": 133207
+  },
+  "otd_2026-04-24_april-24-chart-magic": {
+    "hash": "f66d0ac87c38faa9fe59f825c2ac63c63f1c623ba176493288ca078839d0df4d",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-15T13:25:22.149165+00:00",
+    "bytes": 145117
+  },
+  "otd_2026-04-25_april-25-hit-parade": {
+    "hash": "c40905335b415d94627b893ab9df09aeab30eede53e371f72cdd6237cb87f189",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-15T13:26:31.900745+00:00",
+    "bytes": 134380
+  },
+  "otd_2026-04-26_april-26-hit-parade": {
+    "hash": "a2ac857ebc227774104005181109e1a20df3a2dbb05d5048703f227c219eaffa",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-15T13:27:40.982899+00:00",
+    "bytes": 132192
+  },
+  "trivia-oasis-dont-look-back-in-anger": {
+    "hash": "cb85efec12c96d46eb50bb313a548c2308e739cc431dc80054d31be370b2bdc2",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-15T14:24:11.140009+00:00",
+    "bytes": 153739
+  },
+  "trivia-hugh-jackman-wolverine": {
+    "hash": "733e40808e3b00f1b3f86eda33e6dcf3e9dbb3a31485f9461a5f8069fd046a74",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-15T14:24:11.466754+00:00",
+    "bytes": 158639
+  },
+  "trivia-rolling-stones-tongue": {
+    "hash": "3ca8f292d4fcdc2285f9282c7bc6eb85fe0ef77fca48247c9c7abbd68384cb70",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-15T14:24:11.795560+00:00",
+    "bytes": 162214
+  },
+  "trivia-guns-n-roses": {
+    "hash": "81011f2253df92f227a5050af19ec807f10b6c904f316985ed8e63a5b9ac39e9",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-15T14:24:12.125000+00:00",
+    "bytes": 155862
+  },
+  "trivia-lizzo-flute": {
+    "hash": "1e5d881ba0723d1ba6adecff582901a0daf4a0380a4ca700e84f1f34f4787cb2",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-15T14:24:12.452323+00:00",
+    "bytes": 155861
+  },
+  "trivia-back-to-the-future-power-of-love": {
+    "hash": "acb061350cd9f3252bfc37140d211457cd22196efcd170c4d5e76be01651816a",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-15T14:24:12.783151+00:00",
+    "bytes": 165711
+  },
+  "otd_2026-04-27_hozier-sabrina-bts-chart-party": {
+    "hash": "7265986b3e9bf4a775a3c7e53aa0e7b688800e2a80e1ad1c2c29bf1bd67f23d3",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-15T14:25:56.990015+00:00",
+    "bytes": 134464
+  },
+  "otd_2026-04-28_blondie-gotye-newton-john-drop-hits": {
+    "hash": "b2fafd9faf6279d76b18ba5a0c33fa75bde608fbcc997f70f5ec1243c1ddac98",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-15T14:27:05.044727+00:00",
+    "bytes": 141487
+  },
+  "otd_2026-04-29_chart-toppers-and-album-drops": {
+    "hash": "ca6eeb3282c070ba1fa3199eb78e699520d8427374cc88a08b0354fb351210e0",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-15T14:28:11.389977+00:00",
+    "bytes": 121062
+  },
+  "SongOfTheDay_Earth_Wind_Fire_September": {
+    "hash": "ee139455ab17175dab7a98cd44a71a5fe6b14ab04dd0f9f90da418ce964d89d0",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-15T14:30:06.366605+00:00",
+    "bytes": 107958
+  },
+  "SongOfTheDay_Lauryn_Hill_Ex_Factor": {
+    "hash": "4562d4a3cba768546ffc54048bb85280020e70fb175f5a9b6549ead677df3a56",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-15T14:31:05.806000+00:00",
+    "bytes": 105157
+  },
+  "SongOfTheDay_Daft_Punk_Harder_Better_Faster_Stronger": {
+    "hash": "c389b0dde6b1e6c19f8c6d6268242fbc1458f713fd0f0dba68f9113380ff894a",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-15T14:32:01.477530+00:00",
+    "bytes": 115121
+  },
+  "SongOfTheDay_Sia_Chandelier": {
+    "hash": "0a24e793cd463d57d724d1f3ab9aacb36b52c481bb3b829edc7a13236b8427aa",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-15T14:32:47.357769+00:00",
+    "bytes": 104634
   }
 }

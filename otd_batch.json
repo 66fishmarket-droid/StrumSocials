@@ -1,0 +1,155 @@
+{
+  "content_type": "otd",
+  "design_id": "DAG4Sliy2Zg",
+  "elements": {
+    "factoid": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+    "date": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS"
+  },
+  "placeholders": {
+    "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
+    "date": "{{Date}}"
+  },
+  "generated_at": "2026-04-15T13:22:37.214783+00:00",
+  "dry_run": false,
+  "halt_after_first": false,
+  "driver_protocol": [
+    "1. PREFLIGHT: start-editing-transaction on design_id and read every",
+    "   element in `elements`. Every field must currently equal its value",
+    "   in `placeholders`. If not, perform revert edits to restore",
+    "   placeholders and commit-editing-transaction BEFORE any item edit.",
+    "2. For each item in `items`:",
+    "   a. start-editing-transaction",
+    "   b. perform-editing-operations (the item's `operations`)",
+    "   c. commit-editing-transaction  (NEVER export before commit)",
+    "   d. export-design as JPG quality 90",
+    "   e. curl download to <filename>.jpg",
+    "   f. python strum_automation.py verify -t <content_type> -f <filename>",
+    "      — if non-zero exit, ABORT the batch, do not update sheet.",
+    "   g. start-editing-transaction; revert operations; commit.",
+    "   h. If halt_after_first is true, STOP after item 1 and await",
+    "      explicit user confirmation before continuing.",
+    "3. After all items pass: python strum_automation.py update -t <content_type>",
+    "4. Then: python strum_automation.py commit -t <content_type>"
+  ],
+  "items": [
+    {
+      "row": 171,
+      "post_date": "2026-04-23",
+      "filename": "otd_2026-04-23_lemonade-sticky-fingers-eileen",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Beyoncé drops Lemonade, Stones serve Sticky Fingers, and 'Come On Eileen' hits #1!"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "April 23"
+        }
+      ]
+    },
+    {
+      "row": 172,
+      "post_date": "2026-04-24",
+      "filename": "otd_2026-04-24_april-24-chart-magic",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "From The Doors lighting a fire to Doja Cat and SZA dropping a kiss, April 24th always brings chart-topping anthems."
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "April 24"
+        }
+      ]
+    },
+    {
+      "row": 173,
+      "post_date": "2026-04-25",
+      "filename": "otd_2026-04-25_april-25-hit-parade",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "From Elvis to Shania Twain, Madonna to Destiny’s Child—April 25th is a chart-topping day!"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "April 25"
+        }
+      ]
+    },
+    {
+      "row": 174,
+      "post_date": "2026-04-26",
+      "filename": "otd_2026-04-26_april-26-hit-parade",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "From Dionne to Dr. Hook to Taylor Swift, April 26 is a hit parade across the decades."
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "April 26"
+        }
+      ]
+    },
+    {
+      "row": 175,
+      "post_date": "2026-04-27",
+      "filename": "otd_2026-04-27_hozier-sabrina-bts-chart-party",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Chart-toppers from Hozier, Sabrina Carpenter, and BTS light up this day in music history."
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "April 27"
+        }
+      ]
+    },
+    {
+      "row": 176,
+      "post_date": "2026-04-28",
+      "filename": "otd_2026-04-28_blondie-gotye-newton-john-drop-hits",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Blondie, Olivia Newton-John, and Gotye top the charts while Gorillaz and Tracy Chapman drop iconic albums."
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "April 28"
+        }
+      ]
+    },
+    {
+      "row": 177,
+      "post_date": "2026-04-29",
+      "filename": "otd_2026-04-29_chart-toppers-and-album-drops",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Chart-toppers and iconic albums drop on this day!"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "April 29"
+        }
+      ]
+    }
+  ]
+}

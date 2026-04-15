@@ -128,6 +128,26 @@ TEMPLATES = {
             "option_b": "B. {{Option B}}",
             "option_c": "C. {{Option C}}",
         },
+        "columns": {
+            "post_date": 0,       # A
+            "question": 1,        # B
+            "option_a": 2,        # C
+            "option_b": 3,        # D
+            "option_c": 4,        # E
+            "correct": 5,         # F
+            "extra_info": 6,      # G
+            "hashtags": 11,       # L
+            "image_url": 12,      # M
+            "filename": 13,       # N
+            "status": 14,         # O
+            "image_created": 15,  # P
+        },
+        "filename_col": 13,
+        "image_created_col": 15,
+        "image_url_col": 12,
+        "event_text_col": 1,
+        "post_date_col": 0,
+        "date_format": lambda d: d,  # trivia date stays ISO
     },
     "event": {
         "sheet": "Event Promo",
