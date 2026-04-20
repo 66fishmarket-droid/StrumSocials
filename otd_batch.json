@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-04-15T13:22:37.214783+00:00",
+  "generated_at": "2026-04-20T01:01:35.623615+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,121 +33,53 @@
   ],
   "items": [
     {
-      "row": 171,
-      "post_date": "2026-04-23",
-      "filename": "otd_2026-04-23_lemonade-sticky-fingers-eileen",
+      "row": 179,
+      "post_date": "2026-05-01",
+      "filename": "otd_2026-05-01_may-1st-pop-rock-chart-hits",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Beyoncé drops Lemonade, Stones serve Sticky Fingers, and 'Come On Eileen' hits #1!"
+          "text": "Chart-toppers and iconic releases light up this day in music history!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "April 23"
+          "text": "May 1"
         }
       ]
     },
     {
-      "row": 172,
-      "post_date": "2026-04-24",
-      "filename": "otd_2026-04-24_april-24-chart-magic",
+      "row": 180,
+      "post_date": "2026-05-02",
+      "filename": "otd_2026-05-02_may-2-hit-single-celebration",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From The Doors lighting a fire to Doja Cat and SZA dropping a kiss, April 24th always brings chart-topping anthems."
+          "text": "From Jackie Wilson to Soulja Boy, May 2nd brings hit singles crossing generations."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "April 24"
+          "text": "May 2"
         }
       ]
     },
     {
-      "row": 173,
-      "post_date": "2026-04-25",
-      "filename": "otd_2026-04-25_april-25-hit-parade",
+      "row": 181,
+      "post_date": "2026-05-03",
+      "filename": "otd_2026-05-03_may-3rd-rocks-the-charts",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Elvis to Shania Twain, Madonna to Destiny’s Child—April 25th is a chart-topping day!"
+          "text": "From Aerosmith’s ‘Rocks’ to The Notorious B.I.G’s ‘Hypnotize’ and beyond, May 3rd rocks the charts"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "April 25"
-        }
-      ]
-    },
-    {
-      "row": 174,
-      "post_date": "2026-04-26",
-      "filename": "otd_2026-04-26_april-26-hit-parade",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Dionne to Dr. Hook to Taylor Swift, April 26 is a hit parade across the decades."
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "April 26"
-        }
-      ]
-    },
-    {
-      "row": 175,
-      "post_date": "2026-04-27",
-      "filename": "otd_2026-04-27_hozier-sabrina-bts-chart-party",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-toppers from Hozier, Sabrina Carpenter, and BTS light up this day in music history."
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "April 27"
-        }
-      ]
-    },
-    {
-      "row": 176,
-      "post_date": "2026-04-28",
-      "filename": "otd_2026-04-28_blondie-gotye-newton-john-drop-hits",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Blondie, Olivia Newton-John, and Gotye top the charts while Gorillaz and Tracy Chapman drop iconic albums."
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "April 28"
-        }
-      ]
-    },
-    {
-      "row": 177,
-      "post_date": "2026-04-29",
-      "filename": "otd_2026-04-29_chart-toppers-and-album-drops",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-toppers and iconic albums drop on this day!"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "April 29"
+          "text": "May 3"
         }
       ]
     }

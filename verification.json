@@ -208,5 +208,29 @@
     "template": "DAG92AXOLnE",
     "verified_at": "2026-04-15T14:32:47.357769+00:00",
     "bytes": 104634
+  },
+  "otd_2026-04-30_beat-it-silly-love-rastaman": {
+    "hash": "6a09ba78ae4b24c8e072644d33cd6443608f4459ef1d6cc038691a5d1f5a9ad5",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-16T10:41:37.623988+00:00",
+    "bytes": 121063
+  },
+  "otd_2026-05-01_may-1st-pop-rock-chart-hits": {
+    "hash": "336a12cf934fc702431de48af7cc8b30f657cf6681e31bc93b5c37a2c1f48b09",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-20T01:02:37.226782+00:00",
+    "bytes": 126511
+  },
+  "otd_2026-05-02_may-2-hit-single-celebration": {
+    "hash": "f9f3f88dc1c6d08404f72d3d58046391490f54822faba0d0bbdf8232390cb21b",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-20T01:03:25.907711+00:00",
+    "bytes": 132815
+  },
+  "otd_2026-05-03_may-3rd-rocks-the-charts": {
+    "hash": "502a193cc405c582aab48314d0dab258c88119df6339c86d3b214856a3acf506",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-20T01:04:21.820094+00:00",
+    "bytes": 136996
   }
 }
