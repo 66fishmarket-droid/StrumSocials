@@ -5,8 +5,7 @@
     "question": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
     "option_a": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
     "option_b": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
-    "option_c": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
-    "comment": "PBjpwX1gm3tngz74-LBx5cjHtvKQDvRlz"
+    "option_c": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC"
   },
   "placeholders": {
     "question": "{{Question}}",
@@ -14,210 +13,34 @@
     "option_b": "B. {{Option B}}",
     "option_c": "C. {{Option C}}"
   },
-  "base_positions": {
-    "question": {"top": 323.10053108391605, "left": 288.109375, "width": 503.78125},
-    "option_a": {"top": 420.3885747552448, "left": 427.4765625},
-    "option_b": {"top": 480.19277055944053, "left": 426.8046875},
-    "option_c": {"top": 539.7928305594405, "left": 428.40625},
-    "comment":  {"top": 678.3928905594405, "left": 303.7890625}
-  },
-  "layout_positions": {
-    "question": {"top": 200, "left": 190, "width": 700},
-    "option_a": {"top": 500, "left": 427.4765625},
-    "option_b": {"top": 560, "left": 426.8046875},
-    "option_c": {"top": 620, "left": 428.40625},
-    "comment":  {"top": 700, "left": 303.7890625}
-  },
-  "layout_notes": "Universal layout for all items: question block moved up + widened, answer stack + comment moved down. Handles 1-4 line questions.",
-  "generated_at": "2026-04-14T16:00:00+01:00",
+  "generated_at": "2026-04-22T01:12:31.338549+00:00",
   "dry_run": false,
-  "halt_after_first": true,
+  "halt_after_first": false,
   "driver_protocol": [
-    "1. PREFLIGHT: start-editing-transaction, verify all elements match placeholders AND base_positions.",
-    "2. For each item: start-edit, apply operations (text + layout), commit, export JPG q90, curl, verify, revert via revert_operations, commit.",
-    "3. If halt_after_first: STOP after item 1 for user eyeball.",
-    "4. After all pass: update -t trivia; commit -t trivia (NO push)."
+    "1. PREFLIGHT: start-editing-transaction on design_id and read every",
+    "   element in `elements`. Every field must currently equal its value",
+    "   in `placeholders`. If not, perform revert edits to restore",
+    "   placeholders and commit-editing-transaction BEFORE any item edit.",
+    "2. For each item in `items`:",
+    "   a. start-editing-transaction",
+    "   b. perform-editing-operations (the item's `operations`)",
+    "   c. commit-editing-transaction  (NEVER export before commit)",
+    "   d. export-design as JPG quality 90",
+    "   e. curl download to <filename>.jpg",
+    "   f. python strum_automation.py verify -t <content_type> -f <filename>",
+    "      — if non-zero exit, ABORT the batch, do not update sheet.",
+    "   g. start-editing-transaction; revert operations; commit.",
+    "   h. If halt_after_first is true, STOP after item 1 and await",
+    "      explicit user confirmation before continuing.",
+    "3. After all items pass: python strum_automation.py update -t <content_type>",
+    "4. Then: python strum_automation.py commit -t <content_type>"
   ],
   "items": [
     {
-      "row": 49,
-      "post_date": "2026-04-06",
-      "filename": "trivia-flight-of-the-conchords-band",
-      "question_len": 65,
-      "operations": [
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "text": "Which TV comedy features a band called 'Flight of the Conchords'?"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "text": "A. The Mighty Boosh"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "text": "B. Flight of the Conchords"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "text": "C. Garth Marenghi's Darkplace"},
-        {"type": "resize_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "width": 700},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "top": 200, "left": 190},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "top": 500, "left": 427.4765625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "top": 560, "left": 426.8046875},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "top": 620, "left": 428.40625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBx5cjHtvKQDvRlz", "top": 700, "left": 303.7890625}
-      ],
-      "revert_operations": [
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "text": "{{Question}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "text": "A. {{Option A}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "text": "B. {{Option B}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "text": "C. {{Option C}}"},
-        {"type": "resize_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "width": 503.78125},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "top": 323.10053108391605, "left": 288.109375},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "top": 420.3885747552448, "left": 427.4765625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "top": 480.19277055944053, "left": 426.8046875},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "top": 539.7928305594405, "left": 428.40625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBx5cjHtvKQDvRlz", "top": 678.3928905594405, "left": 303.7890625}
-      ]
-    },
-    {
-      "row": 50,
-      "post_date": "2026-04-06",
-      "filename": "trivia-dua-lipa-future-nostalgia",
-      "question_len": 59,
-      "operations": [
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "text": "Which artist released the album 'Future Nostalgia' in 2020?"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "text": "A. Lady Gaga"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "text": "B. Dua Lipa"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "text": "C. Ariana Grande"},
-        {"type": "resize_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "width": 700},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "top": 200, "left": 190},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "top": 500, "left": 427.4765625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "top": 560, "left": 426.8046875},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "top": 620, "left": 428.40625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBx5cjHtvKQDvRlz", "top": 700, "left": 303.7890625}
-      ],
-      "revert_operations": [
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "text": "{{Question}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "text": "A. {{Option A}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "text": "B. {{Option B}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "text": "C. {{Option C}}"},
-        {"type": "resize_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "width": 503.78125},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "top": 323.10053108391605, "left": 288.109375},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "top": 420.3885747552448, "left": 427.4765625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "top": 480.19277055944053, "left": 426.8046875},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "top": 539.7928305594405, "left": 428.40625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBx5cjHtvKQDvRlz", "top": 678.3928905594405, "left": 303.7890625}
-      ]
-    },
-    {
-      "row": 51,
-      "post_date": "2026-04-06",
-      "filename": "trivia-thelonious-monk-round-midnight",
-      "question_len": 55,
-      "operations": [
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "text": "Which legendary jazz pianist composed 'Round Midnight'?"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "text": "A. Duke Ellington"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "text": "B. Thelonious Monk"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "text": "C. Bill Evans"},
-        {"type": "resize_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "width": 700},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "top": 200, "left": 190},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "top": 500, "left": 427.4765625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "top": 560, "left": 426.8046875},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "top": 620, "left": 428.40625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBx5cjHtvKQDvRlz", "top": 700, "left": 303.7890625}
-      ],
-      "revert_operations": [
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "text": "{{Question}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "text": "A. {{Option A}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "text": "B. {{Option B}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "text": "C. {{Option C}}"},
-        {"type": "resize_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "width": 503.78125},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "top": 323.10053108391605, "left": 288.109375},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "top": 420.3885747552448, "left": 427.4765625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "top": 480.19277055944053, "left": 426.8046875},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "top": 539.7928305594405, "left": 428.40625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBx5cjHtvKQDvRlz", "top": 678.3928905594405, "left": 303.7890625}
-      ]
-    },
-    {
-      "row": 52,
-      "post_date": "2026-04-13",
-      "filename": "trivia-who-guitar-smash",
-      "question_len": 86,
-      "operations": [
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "text": "Which rock band is known for smashing guitars on stage, especially at the end of gigs?"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "text": "A. The Who"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "text": "B. U2"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "text": "C. Coldplay"},
-        {"type": "resize_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "width": 700},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "top": 200, "left": 190},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "top": 500, "left": 427.4765625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "top": 560, "left": 426.8046875},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "top": 620, "left": 428.40625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBx5cjHtvKQDvRlz", "top": 700, "left": 303.7890625}
-      ],
-      "revert_operations": [
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "text": "{{Question}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "text": "A. {{Option A}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "text": "B. {{Option B}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "text": "C. {{Option C}}"},
-        {"type": "resize_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "width": 503.78125},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "top": 323.10053108391605, "left": 288.109375},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "top": 420.3885747552448, "left": 427.4765625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "top": 480.19277055944053, "left": 426.8046875},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "top": 539.7928305594405, "left": 428.40625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBx5cjHtvKQDvRlz", "top": 678.3928905594405, "left": 303.7890625}
-      ]
-    },
-    {
-      "row": 53,
-      "post_date": "2026-04-13",
-      "filename": "trivia-madonna-like-a-prayer",
-      "question_len": 50,
-      "operations": [
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "text": "Which 80s pop icon had a hit with 'Like a Prayer'?"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "text": "A. Whitney Houston"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "text": "B. Madonna"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "text": "C. Cyndi Lauper"},
-        {"type": "resize_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "width": 700},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "top": 200, "left": 190},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "top": 500, "left": 427.4765625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "top": 560, "left": 426.8046875},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "top": 620, "left": 428.40625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBx5cjHtvKQDvRlz", "top": 700, "left": 303.7890625}
-      ],
-      "revert_operations": [
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "text": "{{Question}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "text": "A. {{Option A}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "text": "B. {{Option B}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "text": "C. {{Option C}}"},
-        {"type": "resize_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "width": 503.78125},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "top": 323.10053108391605, "left": 288.109375},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "top": 420.3885747552448, "left": 427.4765625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "top": 480.19277055944053, "left": 426.8046875},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "top": 539.7928305594405, "left": 428.40625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBx5cjHtvKQDvRlz", "top": 678.3928905594405, "left": 303.7890625}
-      ]
-    },
-    {
-      "row": 54,
-      "post_date": "2026-04-13",
-      "filename": "trivia-only-fools-nags-head",
-      "question_len": 51,
-      "operations": [
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "text": "Which TV show features a pub called The Nag's Head?"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "text": "A. Peep Show"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "text": "B. Gavin & Stacey"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "text": "C. Only Fools and Horses"},
-        {"type": "resize_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "width": 700},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "top": 200, "left": 190},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "top": 500, "left": 427.4765625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "top": 560, "left": 426.8046875},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "top": 620, "left": 428.40625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBx5cjHtvKQDvRlz", "top": 700, "left": 303.7890625}
-      ],
-      "revert_operations": [
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "text": "{{Question}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "text": "A. {{Option A}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "text": "B. {{Option B}}"},
-        {"type": "replace_text", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "text": "C. {{Option C}}"},
-        {"type": "resize_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "width": 503.78125},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m", "top": 323.10053108391605, "left": 288.109375},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K", "top": 420.3885747552448, "left": 427.4765625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs", "top": 480.19277055944053, "left": 426.8046875},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC", "top": 539.7928305594405, "left": 428.40625},
-        {"type": "position_element", "element_id": "PBjpwX1gm3tngz74-LBx5cjHtvKQDvRlz", "top": 678.3928905594405, "left": 303.7890625}
-      ]
+      "row": 55,
+      "post_date": "2026-04-20",
+      "filename": "trivia-coldplay-yellow",
+      "operations": []
     }
   ]
 }

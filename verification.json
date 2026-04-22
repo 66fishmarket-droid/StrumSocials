@@ -244,5 +244,47 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-04-22T01:03:06.748170+00:00",
     "bytes": 149243
+  },
+  "SongOfTheDay_Bob_Seger_Turn_the_Page": {
+    "hash": "20092e652772265d9c52749c0c6a7018118851e394b13a00b29b7b64e402998a",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-22T01:07:12.732361+00:00",
+    "bytes": 105427
+  },
+  "SongOfTheDay_Aerosmith_Dream_On": {
+    "hash": "feaffa701105721a97f7382613dca44aac5d2338fb9123b605bafb4bf9a2e9fe",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-22T01:08:01.018966+00:00",
+    "bytes": 103151
+  },
+  "SongOfTheDay_Lana_Del_Rey_Young_and_Beautiful": {
+    "hash": "42aa46d64bc53d1358ca3f162d21e6c786c7a65167e61aa30b025fc1d98096e3",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-22T01:08:57.406551+00:00",
+    "bytes": 108814
+  },
+  "SongOfTheDay_Anna_Nalick_Breathe_2_AM": {
+    "hash": "754e6ad9e3b1e5daac668380d5e51cc0d1f6e41e75714ce308932200a4fbc33c",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-22T01:09:49.928370+00:00",
+    "bytes": 106738
+  },
+  "SongOfTheDay_Steely_Dan_Reelin_in_The_Years": {
+    "hash": "4daa6ab237bbc93f13cd6bb7aebfc0585d1c02ed36c14f8bc9c59133d846022f",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-22T01:10:42.895671+00:00",
+    "bytes": 106666
+  },
+  "SongOfTheDay_Sia_Elastic_Heart": {
+    "hash": "b072a5e6fd485da61a3d78e3fe11da86fccfd4bf072b39c3f2e1cc067ab4db56",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-04-22T01:11:32.344927+00:00",
+    "bytes": 103687
+  },
+  "trivia-coldplay-yellow": {
+    "hash": "0b230eae949c527ba7446b3741e7fcb227e31ee24e10e91ce60bcd17ca5d096d",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-22T01:14:27.328463+00:00",
+    "bytes": 176951
   }
 }
