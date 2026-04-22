@@ -232,5 +232,17 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-04-20T01:04:21.820094+00:00",
     "bytes": 136996
+  },
+  "otd_2026-05-04_swift-lamar-chart-takeover": {
+    "hash": "61cbbc0cc6e09735e3300c87fcd7b6e8e748685b6f762fb85003cee2c30a8d66",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-22T01:02:10.550350+00:00",
+    "bytes": 127107
+  },
+  "otd_2026-05-05_may-5th-musical-milestones": {
+    "hash": "5590d26cf6e992c472cadd805af8e1aedc3971dd8ad59896caef80c4fc4d0f1f",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-22T01:03:06.748170+00:00",
+    "bytes": 149243
   }
 }

@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-04-20T01:01:35.623615+00:00",
+  "generated_at": "2026-04-22T01:01:08.231717+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,53 +33,36 @@
   ],
   "items": [
     {
-      "row": 179,
-      "post_date": "2026-05-01",
-      "filename": "otd_2026-05-01_may-1st-pop-rock-chart-hits",
+      "row": 182,
+      "post_date": "2026-05-04",
+      "filename": "otd_2026-05-04_swift-lamar-chart-takeover",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-toppers and iconic releases light up this day in music history!"
+          "text": "Taylor Swift, Kendrick Lamar, and more light up the charts on this day!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "May 1"
+          "text": "May 4"
         }
       ]
     },
     {
-      "row": 180,
-      "post_date": "2026-05-02",
-      "filename": "otd_2026-05-02_may-2-hit-single-celebration",
+      "row": 183,
+      "post_date": "2026-05-05",
+      "filename": "otd_2026-05-05_may-5th-musical-milestones",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Jackie Wilson to Soulja Boy, May 2nd brings hit singles crossing generations."
+          "text": "From Dobie Gray and Sister Sledge to Janet Jackson and Ariana Grande, May 5th is packed with unforgettable musical moments."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "May 2"
-        }
-      ]
-    },
-    {
-      "row": 181,
-      "post_date": "2026-05-03",
-      "filename": "otd_2026-05-03_may-3rd-rocks-the-charts",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Aerosmith’s ‘Rocks’ to The Notorious B.I.G’s ‘Hypnotize’ and beyond, May 3rd rocks the charts"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "May 3"
+          "text": "May 5"
         }
       ]
     }
