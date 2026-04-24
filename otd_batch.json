@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-04-22T01:01:08.231717+00:00",
+  "generated_at": "2026-04-24T01:02:17.063811+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,36 +33,36 @@
   ],
   "items": [
     {
-      "row": 182,
-      "post_date": "2026-05-04",
-      "filename": "otd_2026-05-04_swift-lamar-chart-takeover",
+      "row": 184,
+      "post_date": "2026-05-06",
+      "filename": "otd_2026-05-06_chart-toppers-katy-justin-kendrick",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Taylor Swift, Kendrick Lamar, and more light up the charts on this day!"
+          "text": "Katy Perry, Justin Timberlake, and Kendrick Lamar all shake up the charts on this day!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "May 4"
+          "text": "May 6"
         }
       ]
     },
     {
-      "row": 183,
-      "post_date": "2026-05-05",
-      "filename": "otd_2026-05-05_may-5th-musical-milestones",
+      "row": 185,
+      "post_date": "2026-05-07",
+      "filename": "otd_2026-05-07_monday-hotel-baby-got-back",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Dobie Gray and Sister Sledge to Janet Jackson and Ariana Grande, May 5th is packed with unforgettable musical moments."
+          "text": "From The Mamas and the Papas to Eagles and Sir Mix-a-Lot, May 7th is a chart-topping party."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "May 5"
+          "text": "May 7"
         }
       ]
     }

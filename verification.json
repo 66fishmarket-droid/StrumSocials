@@ -286,5 +286,17 @@
     "template": "DAG32T-T8gU",
     "verified_at": "2026-04-22T01:14:27.328463+00:00",
     "bytes": 176951
+  },
+  "otd_2026-05-06_chart-toppers-katy-justin-kendrick": {
+    "hash": "2d73a40edce55e1dc7b90a8d2dd367e9e1b093658b356434e51e3399dde0686f",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-24T01:03:41.702484+00:00",
+    "bytes": 132975
+  },
+  "otd_2026-05-07_monday-hotel-baby-got-back": {
+    "hash": "77679c0a4b173844b7668ccf1402383486ddeb4e7ea35ce3fb42b4ceb68ba4a2",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-24T01:04:39.457635+00:00",
+    "bytes": 134944
   }
 }
