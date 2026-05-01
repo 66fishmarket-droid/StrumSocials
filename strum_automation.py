@@ -355,13 +355,25 @@ def scan_pending(content_type="otd"):
             jpg_path = REPO_DIR / f"{filename}.jpg"
             exists_locally = jpg_path.exists()
 
-            pending.append({
+            item = {
                 "row": i,
                 "post_date": post_date,
                 "event_text": event_text,
                 "filename": filename,
                 "exists_locally": exists_locally,
-            })
+            }
+
+            # Capture trivia-specific answer columns
+            if content_type == "trivia":
+                cols = tmpl["columns"]
+                def _col(key):
+                    idx = cols.get(key, -1)
+                    return row[idx].strip() if 0 <= idx < len(row) else ""
+                item["option_a"] = _col("option_a")
+                item["option_b"] = _col("option_b")
+                item["option_c"] = _col("option_c")
+
+            pending.append(item)
 
     return pending, header
 
@@ -466,6 +478,30 @@ def cmd_batch(args):
                 },
             ]
 
+        elif content_type == "trivia":
+            entry["operations"] = [
+                {
+                    "type": "replace_text",
+                    "element_id": tmpl["elements"]["question"],
+                    "text": item["event_text"],
+                },
+                {
+                    "type": "replace_text",
+                    "element_id": tmpl["elements"]["option_a"],
+                    "text": f"A. {item['option_a']}",
+                },
+                {
+                    "type": "replace_text",
+                    "element_id": tmpl["elements"]["option_b"],
+                    "text": f"B. {item['option_b']}",
+                },
+                {
+                    "type": "replace_text",
+                    "element_id": tmpl["elements"]["option_c"],
+                    "text": f"C. {item['option_c']}",
+                },
+            ]
+
         batch["items"].append(entry)
 
     outfile = REPO_DIR / f"{content_type}_batch.json"
@@ -558,13 +594,20 @@ def cmd_update(args):
     col_letter = chr(ord('A') + tmpl["image_created_col"])
 
     cells_to_update = []
+    image_url_col = tmpl.get("image_url_col")
     for item in to_update:
-        cell_ref = f"{col_letter}{item['row']}"
         cells_to_update.append(gspread.Cell(
             row=item["row"],
             col=tmpl["image_created_col"] + 1,  # gspread is 1-indexed
             value="Yes"
         ))
+        if image_url_col is not None:
+            public_url = f"{GITHUB_RAW_BASE}/{item['filename']}.jpg"
+            cells_to_update.append(gspread.Cell(
+                row=item["row"],
+                col=image_url_col + 1,
+                value=public_url,
+            ))
 
     ws.update_cells(cells_to_update)
 

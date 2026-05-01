@@ -298,5 +298,59 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-04-24T01:04:39.457635+00:00",
     "bytes": 134944
+  },
+  "otd_2026-05-08_beatles-marley-jackson5-may8": {
+    "hash": "82f8d45b7f8ee13082ca52152f01aee93708f1e591eb5c0128e5a4601b4e75b2",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-27T01:02:26.343090+00:00",
+    "bytes": 135343
+  },
+  "otd_2026-05-09_from-armstrong-to-gaga": {
+    "hash": "d8a06563ea782df0df7ffd3ea241fecddb8f2d0fffd479efda7b2830b42265d5",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-27T01:04:01.219647+00:00",
+    "bytes": 130178
+  },
+  "otd_2026-05-10_chart-toppers-and-renaissance": {
+    "hash": "88161f1a4fdf493e847d189b89b2f4549b140cb9bb891a8369e5b45bc7013ee9",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-27T01:05:27.325825+00:00",
+    "bytes": 134044
+  },
+  "otd_2026-05-11_beach-boys-madonna-iron-maiden-magic": {
+    "hash": "cfad0eff0c577169739a5866937550e15308a2eb91f66879919db6dbd66ba094",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-29T01:03:57.864102+00:00",
+    "bytes": 140893
+  },
+  "otd_2026-05-12_may-12-music-milestones": {
+    "hash": "f4760e852eca699c2c8adbcd804ec21bf9806197c06c9924f3fa6cc882a8e5e1",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-04-29T01:05:06.735234+00:00",
+    "bytes": 146729
+  },
+  "trivia-green-day-american-idiot": {
+    "hash": "baebf9cb3d0f2a50066a551a9a284eeb61f1b27c8c5d0153fb3061ad025a7465",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-29T01:07:20.521211+00:00",
+    "bytes": 154438
+  },
+  "trivia-greatest-showman-barnum": {
+    "hash": "02bc25ba718a26487433624713199cc0353a64c30f6274fcf4f88f1f663edf2d",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-04-29T01:08:34.227130+00:00",
+    "bytes": 158598
+  },
+  "otd_2026-05-13_chart-toppers-may-13": {
+    "hash": "249b9b10acb929a2f53ba573e62aca703da0ddc854d4aeb47b96dbde4b6a4485",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-01T01:04:55.783712+00:00",
+    "bytes": 128982
+  },
+  "otd_2026-05-14_pop-magic-may-14": {
+    "hash": "b69e7470d2e30598e3f7f0e27b6b8f90a19df7d7eb48184f5b6f52d5583ce1b9",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-01T01:06:29.545089+00:00",
+    "bytes": 136153
   }
 }
