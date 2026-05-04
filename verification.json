@@ -352,5 +352,23 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-05-01T01:06:29.545089+00:00",
     "bytes": 136153
+  },
+  "otd_2026-05-15_prince-mariah-dire-straits-drop-classics": {
+    "hash": "1c54cf9f729cd2f0649965aab9b6ba8972c5836c61202acd7bde8b7ec0a197ed",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-04T01:02:43.404041+00:00",
+    "bytes": 128448
+  },
+  "otd_2026-05-16_pet-sounds-to-doves-cry": {
+    "hash": "132521ccee8df33f86992ff261375f194076f6120806b75f7a87a3fbc31d29b9",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-04T01:04:00.166651+00:00",
+    "bytes": 137908
+  },
+  "otd_2026-05-17_billie-eilish-all-of-me-sunshine": {
+    "hash": "f95d4b8c63acae48120a00d61786760b2b73ede98e21e77e9f052aa7a9f77edf",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-04T01:05:10.623837+00:00",
+    "bytes": 126575
   }
 }

@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-05-01T01:03:07.400100+00:00",
+  "generated_at": "2026-05-04T01:01:13.738597+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,36 +33,53 @@
   ],
   "items": [
     {
-      "row": 191,
-      "post_date": "2026-05-13",
-      "filename": "otd_2026-05-13_chart-toppers-may-13",
+      "row": 193,
+      "post_date": "2026-05-15",
+      "filename": "otd_2026-05-15_prince-mariah-dire-straits-drop-classics",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Rolling Stones, The Supremes, and Rihanna all ruled the charts on this day!"
+          "text": "Prince, Mariah Carey, and Dire Straits light up May 15 with iconic releases"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "May 13"
+          "text": "May 15"
         }
       ]
     },
     {
-      "row": 192,
-      "post_date": "2026-05-14",
-      "filename": "otd_2026-05-14_pop-magic-may-14",
+      "row": 194,
+      "post_date": "2026-05-16",
+      "filename": "otd_2026-05-16_pet-sounds-to-doves-cry",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Pop bangers and classics dropped on this day, from Wham! to Beyoncé and Olivia Rodrigo."
+          "text": "From Pet Sounds to Bette Davis Eyes, May 16th is packed with iconic releases and chart-toppers."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "May 14"
+          "text": "May 16"
+        }
+      ]
+    },
+    {
+      "row": 195,
+      "post_date": "2026-05-17",
+      "filename": "otd_2026-05-17_billie-eilish-all-of-me-sunshine",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Billie Eilish, John Legend, and a pocketful of pop hits drop on May 17!"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "May 17"
         }
       ]
     }
