@@ -370,5 +370,23 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-05-04T01:05:10.623837+00:00",
     "bytes": 126575
+  },
+  "otd_2026-05-18_hits-on-may-18-through-the-years": {
+    "hash": "a61334ed9954c35ffbbd435ef345f815956e3307ee7da285bd6d9c268ebcdd75",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-06T01:03:01.756790+00:00",
+    "bytes": 136555
+  },
+  "otd_2026-05-19_may-19-chart-toppers": {
+    "hash": "737d7c03696cbd2e79101a19d1a15a8c3f33a78643979cca81699e85c271bc75",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-06T01:04:25.151300+00:00",
+    "bytes": 141974
+  },
+  "trivia-lion-king-simba": {
+    "hash": "a69faf70b5e6c07ddebf6badff37403547e4645c4510cd47452fe9ba2c78a585",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-05-06T01:06:41.506636+00:00",
+    "bytes": 164471
   }
 }

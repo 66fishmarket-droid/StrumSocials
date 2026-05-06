@@ -13,7 +13,7 @@
     "option_b": "B. {{Option B}}",
     "option_c": "C. {{Option C}}"
   },
-  "generated_at": "2026-04-29T01:02:32.317972+00:00",
+  "generated_at": "2026-05-06T01:01:12.083881+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -37,56 +37,29 @@
   ],
   "items": [
     {
-      "row": 56,
-      "post_date": "2026-04-27",
-      "filename": "trivia-green-day-american-idiot",
+      "row": 59,
+      "post_date": "2026-05-04",
+      "filename": "trivia-lion-king-simba",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Which band released the album 'American Idiot' in 2004?"
+          "text": "Who voiced Simba's singing parts in Disney's original 'The Lion King'?"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
-          "text": "A. Green Day"
+          "text": "A. Jason Weaver"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
-          "text": "B. Blink-182"
+          "text": "B. Matthew Broderick"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
-          "text": "C. Sum 41"
-        }
-      ]
-    },
-    {
-      "row": 57,
-      "post_date": "2026-04-27",
-      "filename": "trivia-greatest-showman-barnum",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "In 'The Greatest Showman,' who plays the ringmaster P.T. Barnum?"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
-          "text": "A. Zac Efron"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
-          "text": "B. Hugh Jackman"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
-          "text": "C. Ryan Reynolds"
+          "text": "C. Jonathan Taylor Thomas"
         }
       ]
     }
