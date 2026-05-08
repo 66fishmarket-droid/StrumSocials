@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-05-06T01:01:06.239038+00:00",
+  "generated_at": "2026-05-08T01:00:57.696985+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,36 +33,36 @@
   ],
   "items": [
     {
-      "row": 196,
-      "post_date": "2026-05-18",
-      "filename": "otd_2026-05-18_hits-on-may-18-through-the-years",
+      "row": 198,
+      "post_date": "2026-05-20",
+      "filename": "otd_2026-05-20_may-20-chart-toppers",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Dionne Warwick to Kendrick Lamar, May 18th is packed with iconic hits and fresh releases."
+          "text": "Chart-toppers and fresh releases from The Young Rascals to Ariana Grande light up May 20 in music history."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "May 18"
+          "text": "May 20"
         }
       ]
     },
     {
-      "row": 197,
-      "post_date": "2026-05-19",
-      "filename": "otd_2026-05-19_may-19-chart-toppers",
+      "row": 199,
+      "post_date": "2026-05-21",
+      "filename": "otd_2026-05-21_hits-through-the-decades",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Stevie Wonder and Madonna to Elton John, May 19th brings chart-toppers and legendary album drops."
+          "text": "From Stevie Wonder to Olivia Rodrigo, today’s hits span decades of musical magic."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "May 19"
+          "text": "May 21"
         }
       ]
     }
