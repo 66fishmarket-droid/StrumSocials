@@ -1,0 +1,80 @@
+{
+  "content_type": "sotd",
+  "design_id": "DAG92AXOLnE",
+  "elements": {
+    "song_title": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+    "artist": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
+    "mood_tags": "PBjpwX1gm3tngz74-LB3MbCD0NYZyjQmv"
+  },
+  "placeholders": {
+    "song_title": "{{Song Title}}",
+    "artist": "{{Artist}}",
+    "mood_tags": "{{Mood Tags}}"
+  },
+  "generated_at": "2026-05-13T01:00:59.439742+00:00",
+  "dry_run": false,
+  "halt_after_first": false,
+  "driver_protocol": [
+    "1. PREFLIGHT: start-editing-transaction on design_id and read every",
+    "   element in `elements`. Every field must currently equal its value",
+    "   in `placeholders`. If not, perform revert edits to restore",
+    "   placeholders and commit-editing-transaction BEFORE any item edit.",
+    "2. For each item in `items`:",
+    "   a. start-editing-transaction",
+    "   b. perform-editing-operations (the item's `operations`)",
+    "   c. commit-editing-transaction  (NEVER export before commit)",
+    "   d. export-design as JPG quality 90",
+    "   e. curl download to <filename>.jpg",
+    "   f. python strum_automation.py verify -t <content_type> -f <filename>",
+    "      — if non-zero exit, ABORT the batch, do not update sheet.",
+    "   g. start-editing-transaction; revert operations; commit.",
+    "   h. If halt_after_first is true, STOP after item 1 and await",
+    "      explicit user confirmation before continuing.",
+    "3. After all items pass: python strum_automation.py update -t <content_type>",
+    "4. Then: python strum_automation.py commit -t <content_type>"
+  ],
+  "items": [
+    {
+      "row": 138,
+      "post_date": "Sam Smith",
+      "filename": "SongOfTheDay_Sam_Smith_Stay_With_Me",
+      "operations": []
+    },
+    {
+      "row": 139,
+      "post_date": "Jefferson Airplane",
+      "filename": "SongOfTheDay_Jefferson_Airplane_Somebody_to_Love",
+      "operations": []
+    },
+    {
+      "row": 140,
+      "post_date": "Bruno Mars",
+      "filename": "SongOfTheDay_Bruno_Mars_Just_the_Way_You_Are",
+      "operations": []
+    },
+    {
+      "row": 141,
+      "post_date": "No Doubt",
+      "filename": "SongOfTheDay_No_Doubt_Don_t_Speak",
+      "operations": []
+    },
+    {
+      "row": 142,
+      "post_date": "Marshmello ft. Bastille",
+      "filename": "SongOfTheDay_Marshmello_ft_Bastille_Happier",
+      "operations": []
+    },
+    {
+      "row": 143,
+      "post_date": "Sixpence None The Richer",
+      "filename": "SongOfTheDay_Sixpence_None_The_Richer_Kiss_Me",
+      "operations": []
+    },
+    {
+      "row": 144,
+      "post_date": "PARTYNEXTDOOR ft. Drake",
+      "filename": "SongOfTheDay_PARTYNEXTDOOR_ft_Drake_Come_and_See_Me",
+      "operations": []
+    }
+  ]
+}

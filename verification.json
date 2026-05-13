@@ -400,5 +400,89 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-05-08T01:04:42.462057+00:00",
     "bytes": 133294
+  },
+  "otd_2026-05-22_chart-toppers-and-album-legends": {
+    "hash": "0bd243ee335917cc99017626ae97fbfb24c88d7df3478740e24a41c57aec57cf",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-11T01:02:42.606194+00:00",
+    "bytes": 139364
+  },
+  "otd_2026-05-23_chart-toppers-and-heartfelt-debuts": {
+    "hash": "beb52fd1e9c62e43aac76a14cc10d9085374ff785c862d003afcb8b0af0c796a",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-11T01:03:59.859711+00:00",
+    "bytes": 139743
+  },
+  "otd_2026-05-24_jumpin-jack-mmmbop-singalong": {
+    "hash": "3a9859eccf21a588d09a36964120b3276f4cb800b6d919d9cc651345a3698f2a",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-11T01:05:12.596215+00:00",
+    "bytes": 142683
+  },
+  "otd_2026-05-25_u2-mariah-post-top-charts": {
+    "hash": "c5fc824d59419f16e88db0cc2d8acd7a2c23561c00f6e663843fa416d591f68a",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-13T01:02:58.507149+00:00",
+    "bytes": 127696
+  },
+  "otd_2026-05-26_jukebox-of-may-26-hits": {
+    "hash": "eaed6192caf85c96c605827c7635ec6706c917b6bb9a6d5a2ff9e552a678e28e",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-13T01:04:14.511152+00:00",
+    "bytes": 145182
+  },
+  "SongOfTheDay_Sam_Smith_Stay_With_Me": {
+    "hash": "39d8f63dbb9447c26711e619584f009fe821d18bcee7ffaac1a0aa734afebf08",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-05-13T01:05:46.401629+00:00",
+    "bytes": 106550
+  },
+  "SongOfTheDay_Jefferson_Airplane_Somebody_to_Love": {
+    "hash": "c4a24b1a979ecf35abb804efcd4292bf140042593de92f07b073e20e15f2b8f9",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-05-13T01:06:32.966035+00:00",
+    "bytes": 110680
+  },
+  "SongOfTheDay_Bruno_Mars_Just_the_Way_You_Are": {
+    "hash": "6a72328b703e4efdb7959e43145010eb70c58bca4378c9c1e2a9bc9be2c1af6b",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-05-13T01:07:18.931292+00:00",
+    "bytes": 108723
+  },
+  "SongOfTheDay_No_Doubt_Don_t_Speak": {
+    "hash": "baf81d882d525e25b95845819c9be394794a16258f8c10ef2e2b299a0bcd96eb",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-05-13T01:08:05.457450+00:00",
+    "bytes": 106432
+  },
+  "SongOfTheDay_Marshmello_ft_Bastille_Happier": {
+    "hash": "b79bfece3395c8105f7cdc2a7174b31cbee201ba44ccdef0f753beb3dec468e7",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-05-13T01:08:52.387925+00:00",
+    "bytes": 107102
+  },
+  "SongOfTheDay_Sixpence_None_The_Richer_Kiss_Me": {
+    "hash": "eb5e74450aa9f3736eb6ecbf1a59000cf134dbb748bd5376c2ea70f193897c69",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-05-13T01:09:41.641604+00:00",
+    "bytes": 106838
+  },
+  "SongOfTheDay_PARTYNEXTDOOR_ft_Drake_Come_and_See_Me": {
+    "hash": "284d59f8d83654f56f92743dfcb9d1a81bd5fdc6fe225debf84d22fc796a49e6",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-05-13T01:10:34.484200+00:00",
+    "bytes": 112305
+  },
+  "trivia-queen-dont-stop-me-now": {
+    "hash": "450a8e9663fffdcd5d0e612e5d55dd666dab05e5a5e2f451d7694ed1cae8d4b7",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-05-13T01:12:18.841928+00:00",
+    "bytes": 150411
+  },
+  "trivia-jack-black-kung-fu-panda": {
+    "hash": "a655126870ef8137b39f5f3ab94eb37d1cd1de33cc9fa7479b0c8d724ee73a37",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-05-13T01:13:22.337806+00:00",
+    "bytes": 159245
   }
 }

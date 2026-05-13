@@ -13,7 +13,7 @@
     "option_b": "B. {{Option B}}",
     "option_c": "C. {{Option C}}"
   },
-  "generated_at": "2026-05-06T01:01:12.083881+00:00",
+  "generated_at": "2026-05-13T01:01:02.003209+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -37,29 +37,56 @@
   ],
   "items": [
     {
-      "row": 59,
-      "post_date": "2026-05-04",
-      "filename": "trivia-lion-king-simba",
+      "row": 60,
+      "post_date": "2026-05-11",
+      "filename": "trivia-queen-dont-stop-me-now",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Who voiced Simba's singing parts in Disney's original 'The Lion King'?"
+          "text": "Which band had a UK hit with 'Don't Stop Me Now'?"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
-          "text": "A. Jason Weaver"
+          "text": "A. Queen"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
-          "text": "B. Matthew Broderick"
+          "text": "B. ELO"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
-          "text": "C. Jonathan Taylor Thomas"
+          "text": "C. The Who"
+        }
+      ]
+    },
+    {
+      "row": 61,
+      "post_date": "2026-05-11",
+      "filename": "trivia-jack-black-kung-fu-panda",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Who voices Po, the kung fu-loving panda, in the animated film series?"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
+          "text": "A. Seth Rogen"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
+          "text": "B. Jack Black"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
+          "text": "C. Will Ferrell"
         }
       ]
     }

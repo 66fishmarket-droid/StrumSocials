@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-05-08T01:00:57.696985+00:00",
+  "generated_at": "2026-05-13T01:00:57.762151+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,36 +33,36 @@
   ],
   "items": [
     {
-      "row": 198,
-      "post_date": "2026-05-20",
-      "filename": "otd_2026-05-20_may-20-chart-toppers",
+      "row": 203,
+      "post_date": "2026-05-25",
+      "filename": "otd_2026-05-25_u2-mariah-post-top-charts",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-toppers and fresh releases from The Young Rascals to Ariana Grande light up May 20 in music history."
+          "text": "U2, Mariah Carey, and Post Malone all hit the charts on this musical day!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "May 20"
+          "text": "May 25"
         }
       ]
     },
     {
-      "row": 199,
-      "post_date": "2026-05-21",
-      "filename": "otd_2026-05-21_hits-through-the-decades",
+      "row": 204,
+      "post_date": "2026-05-26",
+      "filename": "otd_2026-05-26_jukebox-of-may-26-hits",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Stevie Wonder to Olivia Rodrigo, today’s hits span decades of musical magic."
+          "text": "From Dion’s ‘Lovers Who Wander’ to Harry Styles’ ‘Late Night Talking,’ hit songs and beloved albums dropped on May 26."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "May 21"
+          "text": "May 26"
         }
       ]
     }
