@@ -753,3 +753,89 @@ Local images: 201 OTD, 0 SOTD, 0 Trivia
 
 Launching Claude CLI...
 2026-05-13 01:14:34 UTC | OTD: 2 generated (May 25 127696b, May 26 145182b) | SOTD: 7 generated (Sam Smith, Jefferson Airplane, Bruno Mars, No Doubt, Marshmello ft Bastille, Sixpence None The Richer, PARTYNEXTDOOR ft Drake) | Trivia: 2 generated (Queen, Kung Fu Panda) | All verified PASS | Sheets updated | Pushed commit eb67d60 | No aborts
+All queues clear. Batch complete.
+
+---
+
+**2026-05-13 overnight batch summary ÔÇö commit `eb67d60` + `546ca00`**
+
+| Content | Count | Status |
+|---------|-------|--------|
+| OTD May 25 (`u2-mariah-post-top-charts`) | 127,696 bytes | PASS |
+| OTD May 26 (`jukebox-of-may-26-hits`) | 145,182 bytes | PASS |
+| SOTD Sam Smith ÔÇö Stay With Me | 106,550 bytes | PASS |
+| SOTD Jefferson Airplane ÔÇö Somebody to Love | 110,680 bytes | PASS |
+| SOTD Bruno Mars ÔÇö Just the Way You Are | 108,723 bytes | PASS |
+| SOTD No Doubt ÔÇö Don't Speak | 106,432 bytes | PASS |
+| SOTD Marshmello ft. Bastille ÔÇö Happier | 107,102 bytes | PASS |
+| SOTD Sixpence None The Richer ÔÇö Kiss Me | 106,838 bytes | PASS |
+| SOTD PARTYNEXTDOOR ft. Drake ÔÇö Come and See Me | 112,305 bytes | PASS |
+| Trivia ÔÇö Queen: Don't Stop Me Now | 150,411 bytes | PASS |
+| Trivia ÔÇö Kung Fu Panda: Jack Black | 159,245 bytes | PASS |
+
+- All 3 templates reverted to placeholder state
+- Google Sheets updated for OTD rows 203-204, SOTD rows 138-144, Trivia rows 60-61
+- Pushed to `origin/main` ÔÇö pipeline clean, all queues DONE
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-05-13 02:15:19 ==========
+
+
+========== RUN STARTED 2026-05-15 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[DONE] Trivia Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+Local images: 203 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+API Error: 529 Overloaded. This is a server-side issue, usually temporary ÔÇö try again in a moment. If it persists, check status.claude.com.
+
+Claude CLI exit code: 1
+========== RUN ENDED 2026-05-15 02:04:03 ==========
+
+
+========== RUN STARTED 2026-05-18 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 5
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[DONE] Trivia Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+Local images: 203 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+2026-05-18 01:10:20 UTC | OTD: 5 generated (May 27 135866b, May 28 148912b, May 29 131144b, May 30 132796b, May 31 137426b) | SOTD: 0 pending | Trivia: 0 pending | All verified PASS | Sheets updated | Pushed commit 0a5ede5 | No aborts

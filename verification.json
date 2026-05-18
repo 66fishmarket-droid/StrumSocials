@@ -484,5 +484,35 @@
     "template": "DAG32T-T8gU",
     "verified_at": "2026-05-13T01:13:22.337806+00:00",
     "bytes": 159245
+  },
+  "otd_2026-05-27_dylan-chi-lites-despacito-may27": {
+    "hash": "149b0b82cb81c36b92b97ebdf579ed6bb2a8a4dda1f1b496b5e5da6374fab862",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-18T01:03:29.713282+00:00",
+    "bytes": 135866
+  },
+  "otd_2026-05-28_hit-parade-may-28": {
+    "hash": "11971310c6aa2b40f40321a69a7a6e487fa0313be62759bf10e72d94aaab1ed5",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-18T01:04:46.949846+00:00",
+    "bytes": 148912
+  },
+  "otd_2026-05-29_brown-sugar-to-good-4-u-hits": {
+    "hash": "b1d7d6dbe6fe885a2700ba346b2d8654a95dd8533cd46a3bc8c43a585b5d81ec",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-18T01:06:11.068847+00:00",
+    "bytes": 131144
+  },
+  "otd_2026-05-30_beatles-beyonce-chart-toppers": {
+    "hash": "d8c7a600062e0a5e96d20c93faecc1280daebff8b12f8442aa6e80e8e74134d2",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-18T01:07:33.129452+00:00",
+    "bytes": 132796
+  },
+  "otd_2026-05-31_may-31-hitmakers": {
+    "hash": "508c18eb964f5b72a5639f36428c759449cfd717691458466a86130347da30a3",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-18T01:09:02.756265+00:00",
+    "bytes": 137426
   }
 }

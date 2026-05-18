@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-05-13T01:00:57.762151+00:00",
+  "generated_at": "2026-05-18T01:01:38.448199+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,36 +33,87 @@
   ],
   "items": [
     {
-      "row": 203,
-      "post_date": "2026-05-25",
-      "filename": "otd_2026-05-25_u2-mariah-post-top-charts",
+      "row": 205,
+      "post_date": "2026-05-27",
+      "filename": "otd_2026-05-27_dylan-chi-lites-despacito-may27",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "U2, Mariah Carey, and Post Malone all hit the charts on this musical day!"
+          "text": "From Dylan’s iconic album to chart-topping summer jams, May 27th rocks across the decades."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "May 25"
+          "text": "May 27"
         }
       ]
     },
     {
-      "row": 204,
-      "post_date": "2026-05-26",
-      "filename": "otd_2026-05-26_jukebox-of-may-26-hits",
+      "row": 206,
+      "post_date": "2026-05-28",
+      "filename": "otd_2026-05-28_hit-parade-may-28",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Dion’s ‘Lovers Who Wander’ to Harry Styles’ ‘Late Night Talking,’ hit songs and beloved albums dropped on May 26."
+          "text": "From Percy Sledge’s soulful #1 to Lady Gaga’s big leaps and Justin Timberlake’s dancefloor magic, May 28 is packed with hits."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "May 26"
+          "text": "May 28"
+        }
+      ]
+    },
+    {
+      "row": 207,
+      "post_date": "2026-05-29",
+      "filename": "otd_2026-05-29_brown-sugar-to-good-4-u-hits",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "From Brown Sugar to Good 4 U, chart-topping hits made May 29 unforgettable."
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "May 29"
+        }
+      ]
+    },
+    {
+      "row": 208,
+      "post_date": "2026-05-30",
+      "filename": "otd_2026-05-30_beatles-beyonce-chart-toppers",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "The Beatles, Megan Thee Stallion & Beyoncé, and more hit number one on the charts"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "May 30"
+        }
+      ]
+    },
+    {
+      "row": 209,
+      "post_date": "2026-05-31",
+      "filename": "otd_2026-05-31_may-31-hitmakers",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Chart-toppers from Morgan Wallen, Coldplay, and legends past light up this day in music history."
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "May 31"
         }
       ]
     }
