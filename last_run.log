@@ -839,3 +839,58 @@ Local images: 203 OTD, 0 SOTD, 0 Trivia
 
 Launching Claude CLI...
 2026-05-18 01:10:20 UTC | OTD: 5 generated (May 27 135866b, May 28 148912b, May 29 131144b, May 30 132796b, May 31 137426b) | SOTD: 0 pending | Trivia: 0 pending | All verified PASS | Sheets updated | Pushed commit 0a5ede5 | No aborts
+Batch complete. Here's the run summary:
+
+---
+
+**2026-05-18 overnight batch ÔÇö commits `0a5ede5` + `0a7faac`**
+
+| Content | Size | Status |
+|---------|------|--------|
+| OTD May 27 (`dylan-chi-lites-despacito-may27`) | 135,866 bytes | PASS |
+| OTD May 28 (`hit-parade-may-28`) | 148,912 bytes | PASS |
+| OTD May 29 (`brown-sugar-to-good-4-u-hits`) | 131,144 bytes | PASS |
+| OTD May 30 (`beatles-beyonce-chart-toppers`) | 132,796 bytes | PASS |
+| OTD May 31 (`may-31-hitmakers`) | 137,426 bytes | PASS |
+
+- **SOTD:** 0 pending
+- **Trivia:** 0 pending
+- OTD template `DAG4Sliy2Zg` reverted to clean placeholder state
+- Google Sheet `OnThisDay Seeds` rows 205ÔÇô209 marked `image_created=Yes`
+- Pushed to `origin/main` ÔÇö pipeline fully clear, all queues DONE
+- OTD coverage now extends through May 31 (208 images total)
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-05-18 02:10:44 ==========
+
+
+========== RUN STARTED 2026-05-20 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+[TODO] Song Seeds
+   Need generation: 1
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+Local images: 208 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...

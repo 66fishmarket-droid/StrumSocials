@@ -11,7 +11,7 @@
     "artist": "{{Artist}}",
     "mood_tags": "{{Mood Tags}}"
   },
-  "generated_at": "2026-05-13T01:00:59.439742+00:00",
+  "generated_at": "2026-05-20T01:01:16.430762+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -35,45 +35,9 @@
   ],
   "items": [
     {
-      "row": 138,
-      "post_date": "Sam Smith",
-      "filename": "SongOfTheDay_Sam_Smith_Stay_With_Me",
-      "operations": []
-    },
-    {
-      "row": 139,
-      "post_date": "Jefferson Airplane",
-      "filename": "SongOfTheDay_Jefferson_Airplane_Somebody_to_Love",
-      "operations": []
-    },
-    {
-      "row": 140,
-      "post_date": "Bruno Mars",
-      "filename": "SongOfTheDay_Bruno_Mars_Just_the_Way_You_Are",
-      "operations": []
-    },
-    {
-      "row": 141,
-      "post_date": "No Doubt",
-      "filename": "SongOfTheDay_No_Doubt_Don_t_Speak",
-      "operations": []
-    },
-    {
-      "row": 142,
-      "post_date": "Marshmello ft. Bastille",
-      "filename": "SongOfTheDay_Marshmello_ft_Bastille_Happier",
-      "operations": []
-    },
-    {
-      "row": 143,
-      "post_date": "Sixpence None The Richer",
-      "filename": "SongOfTheDay_Sixpence_None_The_Richer_Kiss_Me",
-      "operations": []
-    },
-    {
-      "row": 144,
-      "post_date": "PARTYNEXTDOOR ft. Drake",
-      "filename": "SongOfTheDay_PARTYNEXTDOOR_ft_Drake_Come_and_See_Me",
+      "row": 145,
+      "post_date": "Simon & Garfunkel",
+      "filename": "SongOfTheDay_Simon_&_Garfunkel_Sound_of_Silence",
       "operations": []
     }
   ]

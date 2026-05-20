@@ -514,5 +514,35 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-05-18T01:09:02.756265+00:00",
     "bytes": 137426
+  },
+  "otd_2026-06-01_billie-eliish-rem-police-june1": {
+    "hash": "df7f08f0c19fa46a529bfa122048ef928d6738324b0b78a40a3d26f7e595d262",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-20T01:03:45.002049+00:00",
+    "bytes": 124106
+  },
+  "SongOfTheDay_Simon_&_Garfunkel_Sound_of_Silence": {
+    "hash": "99f38a9c2c51ffdcbb5d4f5d1cdc92712380ebd6a6381f2c818ffd913e1b6d95",
+    "template": "DAG92AXOLnE",
+    "verified_at": "2026-05-20T01:03:46.141423+00:00",
+    "bytes": 111083
+  },
+  "otd_2026-06-02_hot-stuff-magic-and-bass": {
+    "hash": "2036f05cc00c51a9344620bb716ca9b55b468134802509598d9a9c3c18d1ddbf",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-20T01:08:12.417752+00:00",
+    "bytes": 133451
+  },
+  "trivia-bee-gees-staying-alive": {
+    "hash": "e2ecda4aa3112c0d1b21a2578e8e13c74b985b2d8ebf63080a482bc0e5154468",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-05-20T01:08:12.724699+00:00",
+    "bytes": 153809
+  },
+  "trivia-idina-menzel-frozen": {
+    "hash": "35c07ed7d6cf6904036ed4deb16aa7dc8e7b01da256d862f9434e3124d307a5e",
+    "template": "DAG32T-T8gU",
+    "verified_at": "2026-05-20T01:09:48.111845+00:00",
+    "bytes": 150312
   }
 }

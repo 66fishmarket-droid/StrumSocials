@@ -13,7 +13,7 @@
     "option_b": "B. {{Option B}}",
     "option_c": "C. {{Option C}}"
   },
-  "generated_at": "2026-05-13T01:01:02.003209+00:00",
+  "generated_at": "2026-05-20T01:01:18.170155+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -37,56 +37,56 @@
   ],
   "items": [
     {
-      "row": 60,
-      "post_date": "2026-05-11",
-      "filename": "trivia-queen-dont-stop-me-now",
+      "row": 62,
+      "post_date": "2026-05-18",
+      "filename": "trivia-bee-gees-staying-alive",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Which band had a UK hit with 'Don't Stop Me Now'?"
+          "text": "Which band had a 70s hit with 'Staying Alive' and rocked those white suits?"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
-          "text": "A. Queen"
+          "text": "A. Bee Gees"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
-          "text": "B. ELO"
+          "text": "B. ABBA"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
-          "text": "C. The Who"
+          "text": "C. Village People"
         }
       ]
     },
     {
-      "row": 61,
-      "post_date": "2026-05-11",
-      "filename": "trivia-jack-black-kung-fu-panda",
+      "row": 63,
+      "post_date": "2026-05-18",
+      "filename": "trivia-idina-menzel-frozen",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Who voices Po, the kung fu-loving panda, in the animated film series?"
+          "text": "Who voices Elsa and belts out 'Let It Go' in Disney's 'Frozen'?"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
-          "text": "A. Seth Rogen"
+          "text": "A. Kristen Bell"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
-          "text": "B. Jack Black"
+          "text": "B. Idina Menzel"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
-          "text": "C. Will Ferrell"
+          "text": "C. Demi Lovato"
         }
       ]
     }
