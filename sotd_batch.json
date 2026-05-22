@@ -11,7 +11,7 @@
     "artist": "{{Artist}}",
     "mood_tags": "{{Mood Tags}}"
   },
-  "generated_at": "2026-05-20T01:01:16.430762+00:00",
+  "generated_at": "2026-05-22T02:07:00.000000+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,12 +33,5 @@
     "3. After all items pass: python strum_automation.py update -t <content_type>",
     "4. Then: python strum_automation.py commit -t <content_type>"
   ],
-  "items": [
-    {
-      "row": 145,
-      "post_date": "Simon & Garfunkel",
-      "filename": "SongOfTheDay_Simon_&_Garfunkel_Sound_of_Silence",
-      "operations": []
-    }
-  ]
+  "items": []
 }

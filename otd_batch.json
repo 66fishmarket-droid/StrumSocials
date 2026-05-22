@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-05-20T01:01:14.812725+00:00",
+  "generated_at": "2026-05-22T02:07:00.000000+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -31,40 +31,5 @@
     "3. After all items pass: python strum_automation.py update -t <content_type>",
     "4. Then: python strum_automation.py commit -t <content_type>"
   ],
-  "items": [
-    {
-      "row": 210,
-      "post_date": "2026-06-01",
-      "filename": "otd_2026-06-01_billie-eliish-rem-police-june1",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Billie Eilish, R.E.M., and The Police all hit high notes on this day!"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 1"
-        }
-      ]
-    },
-    {
-      "row": 211,
-      "post_date": "2026-06-02",
-      "filename": "otd_2026-06-02_hot-stuff-magic-and-bass",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Donna Summer’s disco fire to Queen’s magical album drop—June 2 brings the heat!"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 2"
-        }
-      ]
-    }
-  ]
+  "items": []
 }

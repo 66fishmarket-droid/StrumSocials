@@ -13,7 +13,7 @@
     "option_b": "B. {{Option B}}",
     "option_c": "C. {{Option C}}"
   },
-  "generated_at": "2026-05-20T01:01:18.170155+00:00",
+  "generated_at": "2026-05-22T02:07:00.000000+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,62 +33,7 @@
     "   h. If halt_after_first is true, STOP after item 1 and await",
     "      explicit user confirmation before continuing.",
     "3. After all items pass: python strum_automation.py update -t <content_type>",
-    "4. Then: python strum_automation.py commit -t <content_type>"
+    "4. Then: python strum_automation.py commit -t <content_type)"
   ],
-  "items": [
-    {
-      "row": 62,
-      "post_date": "2026-05-18",
-      "filename": "trivia-bee-gees-staying-alive",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Which band had a 70s hit with 'Staying Alive' and rocked those white suits?"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
-          "text": "A. Bee Gees"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
-          "text": "B. ABBA"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
-          "text": "C. Village People"
-        }
-      ]
-    },
-    {
-      "row": 63,
-      "post_date": "2026-05-18",
-      "filename": "trivia-idina-menzel-frozen",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Who voices Elsa and belts out 'Let It Go' in Disney's 'Frozen'?"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
-          "text": "A. Kristen Bell"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
-          "text": "B. Idina Menzel"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
-          "text": "C. Demi Lovato"
-        }
-      ]
-    }
-  ]
+  "items": []
 }
