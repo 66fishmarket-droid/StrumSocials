@@ -894,3 +894,100 @@ Local images: 208 OTD, 0 SOTD, 0 Trivia
 
 
 Launching Claude CLI...
+All queues clear. Batch complete.
+
+---
+
+**2026-05-20 overnight batch ÔÇö commits `a1b95e0` + `0322972`**
+
+| Content | Size | Status |
+|---------|------|--------|
+| OTD Jun 1 (`billie-eliish-rem-police-june1`) | 124,106 bytes | PASS |
+| OTD Jun 2 (`hot-stuff-magic-and-bass`) | 133,451 bytes | PASS |
+| SOTD Simon & Garfunkel ÔÇö Sound of Silence | 111,083 bytes | PASS |
+| Trivia ÔÇö Bee Gees: Staying Alive | 153,809 bytes | PASS |
+| Trivia ÔÇö Idina Menzel: Frozen | 150,312 bytes | PASS |
+
+- All 3 templates reverted to clean placeholder state
+- Google Sheets updated: OTD rows 210-211, SOTD row 145, Trivia rows 62-63
+- Pushed to `origin/main` ÔÇö pipeline fully clear, all queues DONE
+- OTD coverage now extends through June 2 (210 images total)
+
+**Note to flag:** The Trivia template question text box expands into the answer options area when questions exceed ~1 line. The Bee Gees card (`trivia-bee-gees-staying-alive.jpg`) has question text overlapping options A and B in the Canva preview ÔÇö all answers are still readable in orange/yellow but the layout isn't perfectly clean. Worth inspecting before it posts, and consider shortening seed questions in the sheet to Ôëñ40 chars for this template.
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-05-20 02:11:33 ==========
+
+
+========== RUN STARTED 2026-05-22 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[DONE] Trivia Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+Local images: 210 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+All queues clear. Batch run complete.
+
+**Summary:**
+- Generated and committed 2 OTD images: Jun 3 (Aretha Franklin / Stevie Wonder / Guns N' Roses, row 212) and Jun 4 (Bruce Springsteen / Kelly Clarkson, row 213)
+- Both images verified, Google Sheets updated, pushed to GitHub
+- OTD, SOTD, and Trivia queues are all empty ÔÇö nothing left to process
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-05-22 02:08:08 ==========
+
+
+========== RUN STARTED 2026-05-25 10:22:05 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 4
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 0
+   Need sheet update: 2
+
+Local images: 212 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+2026-05-25T09:29:58Z | OTD: 4 generated (rows 214-217, Jun 5-8) | SOTD: 0 | Trivia: 0 (2 sheet rows updated) | All queues clear | No aborts

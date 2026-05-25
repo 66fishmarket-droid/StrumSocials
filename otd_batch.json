@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-05-22T02:07:00.000000+00:00",
+  "generated_at": "2026-05-25T09:23:52.404579+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -31,5 +31,74 @@
     "3. After all items pass: python strum_automation.py update -t <content_type>",
     "4. Then: python strum_automation.py commit -t <content_type>"
   ],
-  "items": []
+  "items": [
+    {
+      "row": 214,
+      "post_date": "2026-06-05",
+      "filename": "otd_2026-06-05_roy-orbison-to-bts-june-5-hits",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "From Roy Orbison to BTS, June 5th drops iconic hits across generations."
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "June 5"
+        }
+      ]
+    },
+    {
+      "row": 215,
+      "post_date": "2026-06-06",
+      "filename": "otd_2026-06-06_ziggy-bad-blood-and-rain-on-me",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Bowie’s Ziggy Stardust lands, Taylor and Kendrick bring Bad Blood, and Lady Gaga & Ariana reign with Rain on Me."
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "June 6"
+        }
+      ]
+    },
+    {
+      "row": 216,
+      "post_date": "2026-06-07",
+      "filename": "otd_2026-06-07_chart-toppers-on-june-7",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "John Denver, Madonna, and Iggy Azalea all topped the charts on this day—what a playlist!"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "June 7"
+        }
+      ]
+    },
+    {
+      "row": 217,
+      "post_date": "2026-06-08",
+      "filename": "otd_2026-06-08_ghostbusters-weeknd-sunshine",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "From Ghostbusters to The Weeknd, June 8th brings pure chart magic."
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "June 8"
+        }
+      ]
+    }
+  ]
 }

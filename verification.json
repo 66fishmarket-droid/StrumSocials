@@ -556,5 +556,29 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-05-22T01:05:49.346456+00:00",
     "bytes": 144712
+  },
+  "otd_2026-06-05_roy-orbison-to-bts-june-5-hits": {
+    "hash": "6d7895dd74758a672a7f37776faf9047604f19f87a41ae63c6bc8d3920b4f64e",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-25T09:25:25.395572+00:00",
+    "bytes": 128904
+  },
+  "otd_2026-06-06_ziggy-bad-blood-and-rain-on-me": {
+    "hash": "2ce5155f309408fdd3427adfec36f25cafae2f89339c750bdb07f8a4c5766078",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-25T09:26:33.868309+00:00",
+    "bytes": 145211
+  },
+  "otd_2026-06-07_chart-toppers-on-june-7": {
+    "hash": "b94c59885eafc0dfbee0387af52a73be1352d4986672bba23312aa5eead7144a",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-25T09:27:43.698594+00:00",
+    "bytes": 134401
+  },
+  "otd_2026-06-08_ghostbusters-weeknd-sunshine": {
+    "hash": "ec69e35d03ae10188a3d85cdbc59f1c15e74577929b65d670e5750d8d4e28000",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-25T09:29:00.558169+00:00",
+    "bytes": 127461
   }
 }
