@@ -991,3 +991,48 @@ Local images: 212 OTD, 0 SOTD, 0 Trivia
 
 Launching Claude CLI...
 2026-05-25T09:29:58Z | OTD: 4 generated (rows 214-217, Jun 5-8) | SOTD: 0 | Trivia: 0 (2 sheet rows updated) | All queues clear | No aborts
+Batch run complete. Summary:
+
+| Type | Generated | Notes |
+|------|-----------|-------|
+| OTD | 4 | Jun 5ÔÇô8 (rows 214ÔÇô217), all verified & pushed |
+| SOTD | 0 | Queue was empty |
+| Trivia | 0 | 2 sheet rows updated (already-generated images) |
+
+All queues are now clear. 216 total OTD images in the repository. Template restored to placeholders, pipeline state committed.
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-05-25 10:30:17 ==========
+
+
+========== RUN STARTED 2026-05-27 02:00:00 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 1
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[DONE] Trivia Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+Local images: 216 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+2026-05-27T01:25:00Z | OTD: 1 generated (Jun 9 127723b) | SOTD: 0 pending | Trivia: 0 pending | All verified PASS | Sheet updated | Pushed commit ad1679e | No aborts

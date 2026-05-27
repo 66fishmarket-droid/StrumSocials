@@ -580,5 +580,11 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-05-25T09:29:00.558169+00:00",
     "bytes": 127461
+  },
+  "otd_2026-06-09_jagged-little-girls-and-umbrella": {
+    "hash": "b54aaf269f5e31a3f805f81c91b913c2365abb0855cf0338f42f1553fcfd05b7",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-27T01:04:31.348713+00:00",
+    "bytes": 127723
   }
 }
