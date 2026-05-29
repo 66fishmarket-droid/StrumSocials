@@ -586,5 +586,17 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-05-27T01:04:31.348713+00:00",
     "bytes": 127723
+  },
+  "otd_2026-06-10_jukebox-legends-june-10": {
+    "hash": "e439804b97a4fe3fbf393771493edf122330595c9f3211db1663d94d79266dee",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-29T01:02:59.006197+00:00",
+    "bytes": 138668
+  },
+  "otd_2026-06-11_rolling-stones-janet-kate-chart-magic": {
+    "hash": "ff02c62ee9ed882cc67bd6f8bf15e2d3904d461f256f98d7783f10403758e3df",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-05-29T01:04:02.330952+00:00",
+    "bytes": 128521
   }
 }

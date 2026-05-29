@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-05-27T01:00:00.000000+00:00",
+  "generated_at": "2026-05-29T01:01:45.014528+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -19,7 +19,7 @@
     "   placeholders and commit-editing-transaction BEFORE any item edit.",
     "2. For each item in `items`:",
     "   a. start-editing-transaction",
-    "   b. perform-editing-operations (the item’s `operations`)",
+    "   b. perform-editing-operations (the item's `operations`)",
     "   c. commit-editing-transaction  (NEVER export before commit)",
     "   d. export-design as JPG quality 90",
     "   e. curl download to <filename>.jpg",
@@ -33,19 +33,36 @@
   ],
   "items": [
     {
-      "row": 218,
-      "post_date": "2026-06-09",
-      "filename": "otd_2026-06-09_jagged-little-girls-and-umbrella",
+      "row": 219,
+      "post_date": "2026-06-10",
+      "filename": "otd_2026-06-10_jukebox-legends-june-10",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Game-changing albums and chart-topping hits dropped on this day!"
+          "text": "From Marvin Gaye’s soulful message to Eagles and Grease classics, June 10 is a jukebox of legends."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 9"
+          "text": "June 10"
+        }
+      ]
+    },
+    {
+      "row": 220,
+      "post_date": "2026-06-11",
+      "filename": "otd_2026-06-11_rolling-stones-janet-kate-chart-magic",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Rolling Stones, Janet Jackson, and Kate Bush storm the charts on June 11!"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "June 11"
         }
       ]
     }
