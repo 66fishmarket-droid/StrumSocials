@@ -598,5 +598,23 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-05-29T01:04:02.330952+00:00",
     "bytes": 128521
+  },
+  "otd_2026-06-12_summer-chart-toppers": {
+    "hash": "47097fdf342d43c931e92d132f725f6e66a3ede14748e40e6ddd139b07131920",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-01T01:02:19.136473+00:00",
+    "bytes": 124729
+  },
+  "otd_2026-06-13_beatles-gaga-lana-june-magic": {
+    "hash": "ab9fb86fa07a55f5f9cbf2e6355e37c7beeac35ed6bde8784e2c2b17bdaf9b0e",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-01T01:03:01.656850+00:00",
+    "bytes": 131396
+  },
+  "otd_2026-06-14_aretha-cream-iron-butterfly-albums": {
+    "hash": "e0af9fbb1a3fb18d7dae5b8a0a4da8bac637afc201157c54bec589ca45322cac",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-01T01:03:49.514528+00:00",
+    "bytes": 130840
   }
 }

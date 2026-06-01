@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-05-29T01:01:45.014528+00:00",
+  "generated_at": "2026-06-01T01:01:11.466778+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,36 +33,53 @@
   ],
   "items": [
     {
-      "row": 219,
-      "post_date": "2026-06-10",
-      "filename": "otd_2026-06-10_jukebox-legends-june-10",
+      "row": 221,
+      "post_date": "2026-06-12",
+      "filename": "otd_2026-06-12_summer-chart-toppers",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Marvin Gaye’s soulful message to Eagles and Grease classics, June 10 is a jukebox of legends."
+          "text": "Chart-toppers and classic summer grooves hit the spotlight."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 10"
+          "text": "June 12"
         }
       ]
     },
     {
-      "row": 220,
-      "post_date": "2026-06-11",
-      "filename": "otd_2026-06-11_rolling-stones-janet-kate-chart-magic",
+      "row": 222,
+      "post_date": "2026-06-13",
+      "filename": "otd_2026-06-13_beatles-gaga-lana-june-magic",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Rolling Stones, Janet Jackson, and Kate Bush storm the charts on June 11!"
+          "text": "Chart-toppers, singalongs, and a Lana Del Rey album drop all landed on June 13!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 11"
+          "text": "June 13"
+        }
+      ]
+    },
+    {
+      "row": 223,
+      "post_date": "2026-06-14",
+      "filename": "otd_2026-06-14_aretha-cream-iron-butterfly-albums",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Aretha Franklin, Cream, and Iron Butterfly all dropped iconic albums on this day."
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "June 14"
         }
       ]
     }
