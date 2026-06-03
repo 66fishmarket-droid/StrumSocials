@@ -616,5 +616,17 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-06-01T01:03:49.514528+00:00",
     "bytes": 130840
+  },
+  "otd_2026-06-15_chart-toppers-on-june-15": {
+    "hash": "da0923f13a8bc3358aed09f06013da1d5c319354f8a2cb796e34e53ffcac484d",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-03T01:01:56.868295+00:00",
+    "bytes": 133295
+  },
+  "otd_2026-06-16_boogie-borderline-and-kodachrome": {
+    "hash": "27d39d40e19c7a8a76267a8043adcc11b9c468d839f1a404542fae9fb898be03",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-03T01:02:59.371510+00:00",
+    "bytes": 125145
   }
 }

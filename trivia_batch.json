@@ -13,7 +13,7 @@
     "option_b": "B. {{Option B}}",
     "option_c": "C. {{Option C}}"
   },
-  "generated_at": "2026-05-22T02:07:00.000000+00:00",
+  "generated_at": "2026-06-03T01:01:04.016870+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,7 +33,62 @@
     "   h. If halt_after_first is true, STOP after item 1 and await",
     "      explicit user confirmation before continuing.",
     "3. After all items pass: python strum_automation.py update -t <content_type>",
-    "4. Then: python strum_automation.py commit -t <content_type)"
+    "4. Then: python strum_automation.py commit -t <content_type>"
   ],
-  "items": []
+  "items": [
+    {
+      "row": 66,
+      "post_date": "2026-06-01",
+      "filename": "trivia-blur-song-2",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Which band had a 90s hit with 'Song 2' and its famous 'woo-hoo' chorus?"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
+          "text": "A. Blur"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
+          "text": "B. Oasis"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
+          "text": "C. Pulp"
+        }
+      ]
+    },
+    {
+      "row": 67,
+      "post_date": "2026-06-01",
+      "filename": "trivia-wolverine-xmen",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Which actor starred as Wolverine in the 'X-Men' film series?"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
+          "text": "A. Chris Hemsworth"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
+          "text": "B. Hugh Jackman"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
+          "text": "C. Ryan Reynolds"
+        }
+      ]
+    }
+  ]
 }

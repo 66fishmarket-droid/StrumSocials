@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-06-01T01:01:11.466778+00:00",
+  "generated_at": "2026-06-03T01:01:01.533150+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,53 +33,36 @@
   ],
   "items": [
     {
-      "row": 221,
-      "post_date": "2026-06-12",
-      "filename": "otd_2026-06-12_summer-chart-toppers",
+      "row": 224,
+      "post_date": "2026-06-15",
+      "filename": "otd_2026-06-15_chart-toppers-on-june-15",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-toppers and classic summer grooves hit the spotlight."
+          "text": "From Kyu Sakamoto’s “Sukiyaki” to Eminem’s “Houdini,” June 15 is a chart-topping day."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 12"
+          "text": "June 15"
         }
       ]
     },
     {
-      "row": 222,
-      "post_date": "2026-06-13",
-      "filename": "otd_2026-06-13_beatles-gaga-lana-june-magic",
+      "row": 225,
+      "post_date": "2026-06-16",
+      "filename": "otd_2026-06-16_boogie-borderline-and-kodachrome",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-toppers, singalongs, and a Lana Del Rey album drop all landed on June 13!"
+          "text": "Boogie, ballads, and pop icons light up June 16 in music history!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 13"
-        }
-      ]
-    },
-    {
-      "row": 223,
-      "post_date": "2026-06-14",
-      "filename": "otd_2026-06-14_aretha-cream-iron-butterfly-albums",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Aretha Franklin, Cream, and Iron Butterfly all dropped iconic albums on this day."
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 14"
+          "text": "June 16"
         }
       ]
     }
