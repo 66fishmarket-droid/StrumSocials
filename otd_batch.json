@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-06-05T01:01:01.805055+00:00",
+  "generated_at": "2026-06-08T01:00:59.069077+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,36 +33,53 @@
   ],
   "items": [
     {
-      "row": 226,
-      "post_date": "2026-06-17",
-      "filename": "otd_2026-06-17_elvis-to-shakira-june-17-hits",
+      "row": 228,
+      "post_date": "2026-06-19",
+      "filename": "otd_2026-06-19_pop-hit-parade-june-19",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Elvis to Shakira, June 17th brings iconic hits and legendary album drops."
+          "text": "From Carole King to Katy Perry, June 19th is a pop hit parade!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 17"
+          "text": "June 19"
         }
       ]
     },
     {
-      "row": 227,
-      "post_date": "2026-06-18",
-      "filename": "otd_2026-06-18_dreams-to-recovery",
+      "row": 229,
+      "post_date": "2026-06-20",
+      "filename": "otd_2026-06-20_hit-parade-june-20",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Fleetwood Mac’s chart-topping ‘Dreams’ to the release of Eminem’s ‘Recovery’, June 18 brings musical fireworks."
+          "text": "A hit parade of new releases and chart-toppers light up June 20th!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 18"
+          "text": "June 20"
+        }
+      ]
+    },
+    {
+      "row": 230,
+      "post_date": "2026-06-21",
+      "filename": "otd_2026-06-21_beyonce-elton-sabrina-number-ones",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Beyoncé, Elton John & Kiki Dee, and Sabrina Carpenter all hit number one on this day!"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "June 21"
         }
       ]
     }
