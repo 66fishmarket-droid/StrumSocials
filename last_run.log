@@ -1306,3 +1306,61 @@ Local images: 226 OTD, 0 SOTD, 0 Trivia
 
 Launching Claude CLI...
 [2026-06-08 02:05:32] BATCH SUMMARY: OTD 3/3 generated+verified+pushed (rows 228-230, Jun 19-21). SOTD 0 pending. TRIVIA 2 pending SKIPPED (documented long-question overlap blocker; awaits supervised layout fix). No rate-limit/auth errors. No aborts.
+Overnight batch complete. Clean exit.
+
+## Summary
+
+**OTD ÔÇö 3/3 done** (rows 228ÔÇô230, June 19ÔÇô21):
+- `otd_2026-06-19_pop-hit-parade-june-19` ÔÇö PASS (124 KB)
+- `otd_2026-06-20_hit-parade-june-20` ÔÇö PASS (127 KB)
+- `otd_2026-06-21_beyonce-elton-sabrina-number-ones` ÔÇö PASS (133 KB)
+
+Each followed the fail-closed driver protocol: preflight verified clean ÔåÆ edit ÔåÆ commit ÔåÆ export JPG q90 ÔåÆ download ÔåÆ `verify` PASS ÔåÆ revert to placeholders ÔåÆ commit. Template confirmed back at `{{Date}}` / `{{bla bla...}}` placeholders.
+
+**SOTD** ÔÇö 0 pending, nothing to do.
+
+**Trivia** ÔÇö 2 pending, **skipped**. Per the documented blocker (long-question/answer overlap regression from the base-layout template), trivia stays out of unattended runs until a supervised layout fix lands. Logged, not aborted.
+
+**Git** ÔÇö two commits pushed to `main`:
+- `cf2ae4b` ÔÇö 3 OTD images
+- `3806da9` ÔÇö pipeline state (batch + verification ledger + log)
+
+No rate-limit or auth errors. No aborts. Final status: OTD 0 / SOTD 0 / Trivia 2 pending (blocked). Local image count 226 ÔåÆ 229 OTD.
+
+One open item for a supervised session: the trivia layout fix is now the only thing standing between the pipeline and full automation ÔÇö it's been pending across several runs.
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-06-08 02:06:07 ==========
+
+
+========== RUN STARTED 2026-06-10 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 4
+   Need sheet update: 0
+
+Local images: 229 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+[2026-06-10 02:04:16] BATCH SUMMARY: OTD 2/2 generated+verified+pushed (rows 231-232, Jun 22-23). SOTD 0 pending. TRIVIA 4 pending SKIPPED (documented long-question overlap blocker; awaits supervised layout fix). No rate-limit/auth errors. No aborts.

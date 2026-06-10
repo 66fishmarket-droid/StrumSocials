@@ -658,5 +658,17 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-06-08T01:04:18.127735+00:00",
     "bytes": 132618
+  },
+  "otd_2026-06-22_billie-eilish-prince-neil-young": {
+    "hash": "792ce3a908aaa90396f39270856858fcd3d090b08a31c8f6102f5e042165d37b",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-10T01:02:08.791928+00:00",
+    "bytes": 136967
+  },
+  "otd_2026-06-23_june-23-hit-parade": {
+    "hash": "ea327a3e200bea569ab73f951046b713be3e0ede37bd0681a6e4035929cc9f99",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-10T01:03:11.620723+00:00",
+    "bytes": 123629
   }
 }
