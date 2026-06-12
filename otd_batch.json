@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-06-10T01:00:57.474171+00:00",
+  "generated_at": "2026-06-12T01:01:03.048581+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,36 +33,36 @@
   ],
   "items": [
     {
-      "row": 231,
-      "post_date": "2026-06-22",
-      "filename": "otd_2026-06-22_billie-eilish-prince-neil-young",
+      "row": 233,
+      "post_date": "2026-06-24",
+      "filename": "otd_2026-06-24_album-anniversaries-elton-queen-beyonce",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Billie Eilish and Prince light up the charts, with a throwback to Neil Young’s classic album release."
+          "text": "Elton John, Queen, and Beyoncé drop iconic albums on June 24."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 22"
+          "text": "June 24"
         }
       ]
     },
     {
-      "row": 232,
-      "post_date": "2026-06-23",
-      "filename": "otd_2026-06-23_june-23-hit-parade",
+      "row": 234,
+      "post_date": "2026-06-25",
+      "filename": "otd_2026-06-25_purple-rain-and-chart-toppers",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-topping tunes and iconic albums landed on June 23!"
+          "text": "Prince unleashes Purple Rain and chart-toppers light up the airwaves!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 23"
+          "text": "June 25"
         }
       ]
     }
