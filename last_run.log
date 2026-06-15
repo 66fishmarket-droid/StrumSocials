@@ -1427,3 +1427,111 @@ SOTD: 0 pending, skipped.
 TRIVIA: 4 pending, SKIPPED - documented long-question overlap blocker requires supervised layout fix (not run unattended).
 Aborts: none. Rate-limit/auth errors: none. Template reverted to placeholders. Images commit f894e56 pushed to main.
 ========== RUN ENDED 2026-06-12 ==========
+Batch run complete. Summary:
+
+## Overnight Batch ‘«ˆ 2026-06-12 ‘£‡
+
+**OTD (On This Day): 2 generated, verified, pushed**
+| Row | Date | Filename | Size | Verify |
+|-----|------|----------|------|--------|
+| 233 | Jun 24 | `otd_2026-06-24_album-anniversaries-elton-queen-beyonce` | 125 KB | PASS |
+| 234 | Jun 25 | `otd_2026-06-25_purple-rain-and-chart-toppers` | 128 KB | PASS |
+
+Local OTD count: 231 ‘Â∆ 233. Sheet rows marked. Template confirmed reverted to placeholders.
+
+**SOTD (Song of the Day):** 0 pending ‘«ˆ skipped.
+
+**Trivia:** 4 pending ‘«ˆ **skipped** (documented long-question overlap blocker; requires supervised layout fix, not run unattended).
+
+**Protocol adherence:** Fail-closed driver protocol followed per item (preflight ‘Â∆ edit ‘Â∆ commit ‘Â∆ export q90 ‘Â∆ download ‘Â∆ verify ‘Â∆ revert ‘Â∆ commit). No verify failures, no aborts, no rate-limit/401 errors. 2 images well under the 30-image cap.
+
+**Git (pushed to main):**
+- `f894e56` ‘«ˆ Add 2 On This Day images
+- `acf6926` ‘«ˆ Update pipeline state (batch + verification ledger + log)
+
+Summary line written to `last_run.log`. The only outstanding item across the whole pipeline is the Trivia queue, still blocked pending the supervised template layout fix.
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-06-12 02:04:34 ==========
+
+
+========== RUN STARTED 2026-06-15 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ˘ Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 3
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 4
+   Need sheet update: 0
+
+Local images: 233 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+========== RUN STARTED 2026-06-15 02:01:11 ==========
+============================================================
+Strum! Social Media Automation ó Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 3
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 4
+   Need sheet update: 0
+
+Local images: 233 OTD, 0 SOTD, 0 Trivia
+
+Batch file written: C:\Users\matty\projects\StrumSocials\otd_batch.json
+Items: 3
+
+To process in Claude Code, use:
+  'Process the batch file otd_batch.json using the Canva MCP tools'
+
+Driver MUST follow the `driver_protocol` embedded in the JSON.
+Each export will be verified by: verify -t otd -f <filename>
+
+Updating 3 verified rows in 'OnThisDay Seeds'...
+Done! Updated 6 rows to 'Yes'.
+  Row 235 | otd_2026-06-26_june-26-iconic-hit-releases
+  Row 236 | otd_2026-06-27_whitney-wham-and-macy-gray-magic
+  Row 237 | otd_2026-06-28_beach-boys-to-coldplay-hits
+[main 48a2ff6] Add 3 On This Day images via automated Canva pipeline
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 otd_2026-06-26_june-26-iconic-hit-releases.jpg
+ create mode 100644 otd_2026-06-27_whitney-wham-and-macy-gray-magic.jpg
+ create mode 100644 otd_2026-06-28_beach-boys-to-coldplay-hits.jpg
+To https://github.com/66fishmarket-droid/StrumSocials.git
+   acf6926..48a2ff6  main -> main
+
+Committing 3 verified images:
+  otd_2026-06-26_june-26-iconic-hit-releases.jpg
+  otd_2026-06-27_whitney-wham-and-macy-gray-magic.jpg
+  otd_2026-06-28_beach-boys-to-coldplay-hits.jpg
+
+Committed and pushed 3 images.
+2026-06-15 01:05:38 UTC | OTD: 3 generated (Jun 26 131305b, Jun 27 124990b, Jun 28 142279b, rows 235-237) | SOTD: 0 pending | Trivia: 4 pending SKIPPED (overlap blocker, awaits supervised layout fix) | All verified PASS | Sheet updated | Pushed commit 48a2ff6 | No aborts
+========== RUN ENDED 2026-06-15 02:05:38 ==========

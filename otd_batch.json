@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-06-12T01:01:03.048581+00:00",
+  "generated_at": "2026-06-15T01:01:27.062574+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,36 +33,53 @@
   ],
   "items": [
     {
-      "row": 233,
-      "post_date": "2026-06-24",
-      "filename": "otd_2026-06-24_album-anniversaries-elton-queen-beyonce",
+      "row": 235,
+      "post_date": "2026-06-26",
+      "filename": "otd_2026-06-26_june-26-iconic-hit-releases",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Elton John, Queen, and Beyoncé drop iconic albums on June 24."
+          "text": "From Mr. Tambourine Man to Wannabe, June 26 has been packed with iconic hits."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 24"
+          "text": "June 26"
         }
       ]
     },
     {
-      "row": 234,
-      "post_date": "2026-06-25",
-      "filename": "otd_2026-06-25_purple-rain-and-chart-toppers",
+      "row": 236,
+      "post_date": "2026-06-27",
+      "filename": "otd_2026-06-27_whitney-wham-and-macy-gray-magic",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Prince unleashes Purple Rain and chart-toppers light up the airwaves!"
+          "text": "From Whitney to Wham!—hits and legends light up June 27th."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 25"
+          "text": "June 27"
+        }
+      ]
+    },
+    {
+      "row": 237,
+      "post_date": "2026-06-28",
+      "filename": "otd_2026-06-28_beach-boys-to-coldplay-hits",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Chart-toppers and classics from The Beach Boys, Dire Straits, and Coldplay light up this day in music history."
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "June 28"
         }
       ]
     }
