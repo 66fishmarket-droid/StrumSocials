@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-06-15T01:01:27.062574+00:00",
+  "generated_at": "2026-06-17T01:00:52.884461+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,53 +33,36 @@
   ],
   "items": [
     {
-      "row": 235,
-      "post_date": "2026-06-26",
-      "filename": "otd_2026-06-26_june-26-iconic-hit-releases",
+      "row": 238,
+      "post_date": "2026-06-29",
+      "filename": "otd_2026-06-29_june-29-sizzling-soundtrack",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Mr. Tambourine Man to Wannabe, June 26 has been packed with iconic hits."
+          "text": "Chart-toppers, iconic albums, and summer anthems all dropped on June 29."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 26"
+          "text": "June 29"
         }
       ]
     },
     {
-      "row": 236,
-      "post_date": "2026-06-27",
-      "filename": "otd_2026-06-27_whitney-wham-and-macy-gray-magic",
+      "row": 239,
+      "post_date": "2026-06-30",
+      "filename": "otd_2026-06-30_harrison-ward-madonna-june30",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Whitney to Wham!—hits and legends light up June 27th."
+          "text": "George Harrison, Anita Ward, and Madonna light up June 30th with chart-topping hits and a pop classic album release."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 27"
-        }
-      ]
-    },
-    {
-      "row": 237,
-      "post_date": "2026-06-28",
-      "filename": "otd_2026-06-28_beach-boys-to-coldplay-hits",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-toppers and classics from The Beach Boys, Dire Straits, and Coldplay light up this day in music history."
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "June 28"
+          "text": "June 30"
         }
       ]
     }

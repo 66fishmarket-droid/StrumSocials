@@ -1535,3 +1535,63 @@ Committing 3 verified images:
 Committed and pushed 3 images.
 2026-06-15 01:05:38 UTC | OTD: 3 generated (Jun 26 131305b, Jun 27 124990b, Jun 28 142279b, rows 235-237) | SOTD: 0 pending | Trivia: 4 pending SKIPPED (overlap blocker, awaits supervised layout fix) | All verified PASS | Sheet updated | Pushed commit 48a2ff6 | No aborts
 ========== RUN ENDED 2026-06-15 02:05:38 ==========
+Overnight batch complete. Summary:
+
+## Batch Run ÔÇö 2026-06-15
+
+| Content | Result |
+|---------|--------|
+| **OTD** | 3/3 generated, verified PASS, pushed |
+| **SOTD** | 0 pending |
+| **Trivia** | 4 pending ÔÇö **SKIPPED** (known overlap blocker) |
+
+**OTD images delivered** (template `DAG4Sliy2Zg`):
+- `otd_2026-06-26_june-26-iconic-hit-releases.jpg` ÔÇö 131,305 b, PASS
+- `otd_2026-06-27_whitney-wham-and-macy-gray-magic.jpg` ÔÇö 124,990 b, PASS
+- `otd_2026-06-28_beach-boys-to-coldplay-hits.jpg` ÔÇö 142,279 b, PASS
+
+**Pipeline state:**
+- Preflight confirmed template clean before run; reverted to placeholders and committed after
+- Each export: commit ÔåÆ export q90 ÔåÆ download ÔåÆ verify (all non-zero-exit gates passed)
+- Sheet `OnThisDay Seeds` rows 235ÔÇô237 marked `image_created=Yes`
+- Pushed: `48a2ff6` (images) + `17fb68c` (state) to `origin/main`
+- OTD coverage now through **June 28** (236 images total); OTD + SOTD queues clear
+
+**Flagged for you (not actioned):** Trivia has 4 items pending generation but I left them per the standing overlap blocker ÔÇö with the template at base positions and a replace_text-only batch, long questions overlap the answer options. This needs the supervised layout fix before trivia can run unattended. No rate-limit hits, no auth issues, no aborts.
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-06-15 02:06:03 ==========
+
+
+========== RUN STARTED 2026-06-17 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 236 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+2026-06-17 01:04 UTC | OTD: 2 generated (Jun 29 129603b, Jun 30 146035b) | SOTD: 0 pending | Trivia: 6 pending SKIPPED (overlap blocker, supervised fix needed) | All verified PASS | Sheet rows 238-239 updated | Pushed commit 4c8ab7e | No aborts
