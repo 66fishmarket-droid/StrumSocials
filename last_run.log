@@ -1595,3 +1595,90 @@ Local images: 236 OTD, 0 SOTD, 0 Trivia
 Launching Claude CLI...
 
 2026-06-17 01:04 UTC | OTD: 2 generated (Jun 29 129603b, Jun 30 146035b) | SOTD: 0 pending | Trivia: 6 pending SKIPPED (overlap blocker, supervised fix needed) | All verified PASS | Sheet rows 238-239 updated | Pushed commit 4c8ab7e | No aborts
+Overnight batch complete.
+
+## Summary ÔÇö 2026-06-17
+
+| Content | Result |
+|---------|--------|
+| **OTD Jun 29** (`june-29-sizzling-soundtrack`) | 129,603 bytes ÔÇö PASS |
+| **OTD Jun 30** (`harrison-ward-madonna-june30`) | 146,035 bytes ÔÇö PASS |
+| **SOTD** | 0 pending |
+| **Trivia** | 6 pending ÔÇö **SKIPPED** (overlap blocker) |
+
+**Pipeline actions:**
+- Preflight confirmed template clean before edits
+- Both images generated ÔåÆ committed ÔåÆ exported JPG q90 ÔåÆ verified PASS
+- Template `DAG4Sliy2Zg` reverted to base placeholders (clean for next run)
+- Sheet rows 238ÔÇô239 marked `image_created=Yes`
+- Images pushed (`4c8ab7e`), state files pushed (`7686e03`)
+- Summary appended to `last_run.log`
+
+**OTD and SOTD queues now clear.** OTD coverage extends through June 30 ÔÇö 238 images total.
+
+**Trivia remains blocked:** 6 items pending, deliberately skipped per the standing decision. The trivia template is back at base positions and a replace_text-only batch overlaps long questions onto answer options. This needs a *supervised* layout fix (wide question box + answer stack) before unattended trivia generation can resume ÔÇö it can't be safely resolved during an overnight run.
+
+No aborts, no rate-limit issues, no abnormal events.
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-06-17 02:04:42 ==========
+
+
+========== RUN STARTED 2026-06-22 16:32:24 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 238 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+Failed to authenticate. API Error: 401 Invalid authentication credentials
+
+Claude CLI exit code: 1
+========== RUN ENDED 2026-06-22 16:32:38 ==========
+
+
+========== RUN STARTED 2026-06-24 02:00:00 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 7
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 238 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+2026-06-24 01:05 UTC | OTD: 7 generated (rows 240-246, Jul 1-7) | SOTD: 0 pending | Trivia: 6 pending SKIPPED (overlap blocker, awaits supervised layout fix) | All verified PASS | Sheet updated | Pushed commit 2ffc266 | Images this run: 7/30 | No 429/401, no aborts

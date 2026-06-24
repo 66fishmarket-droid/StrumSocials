@@ -712,5 +712,47 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-06-17T01:03:10.273663+00:00",
     "bytes": 146035
+  },
+  "otd_2026-07-01_july-1st-chart-toppers": {
+    "hash": "3a62e07a96904f9b2307d0dc4f11bb8fe2fff2837bba20810c0102ea0298ca46",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-24T01:02:03.736033+00:00",
+    "bytes": 125438
+  },
+  "otd_2026-07-02_july-2nd-chart-toppers": {
+    "hash": "b4a9099f9edddca3938ff3620091376193338c9d3d441bdf7c971a0555f224c8",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-24T01:03:19.918602+00:00",
+    "bytes": 134105
+  },
+  "otd_2026-07-03_july-3-chart-anthems": {
+    "hash": "8db7943d1266202cbe240ae0324923b0a0caee87fa1afad868680900039223c6",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-24T01:04:40.348186+00:00",
+    "bytes": 131019
+  },
+  "otd_2026-07-04_fireworks-and-chart-toppers": {
+    "hash": "04eb1f8af8fd31f42883a1ad7b81ad065b4e7edd5b066096b7b22fec3981ca11",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-24T01:06:01.130041+00:00",
+    "bytes": 127819
+  },
+  "otd_2026-07-05_katy-perry-gotye-billy-ocean": {
+    "hash": "ebaf95404754497ffc64784305ca98f8858b35d75d7e492c45b4244776c90304",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-24T01:07:23.015986+00:00",
+    "bytes": 128872
+  },
+  "otd_2026-07-06_chart-toppers-galore": {
+    "hash": "c98aaf805c3a4dcbf822de289c9489bbf867ae138517adcc5037b26dc91dfc5f",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-24T01:08:37.557085+00:00",
+    "bytes": 135651
+  },
+  "otd_2026-07-07_beatles-floyd-prince-taylor-hits": {
+    "hash": "ee7019da9c76f6419cbf6450dcc13f70f8a7ba6fbac01408f51dee24af5b7b00",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-24T01:09:56.138113+00:00",
+    "bytes": 131230
   }
 }
