@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-06-24T01:00:52.843781+00:00",
+  "generated_at": "2026-06-26T01:00:58.467142+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,121 +33,36 @@
   ],
   "items": [
     {
-      "row": 240,
-      "post_date": "2026-07-01",
-      "filename": "otd_2026-07-01_july-1st-chart-toppers",
+      "row": 247,
+      "post_date": "2026-07-08",
+      "filename": "otd_2026-07-08_lean-on-tlc-waterfalls-day",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-toppers and unforgettable tunes light up July 1st history!"
+          "text": "From Bill Withers to TLC, July 8th is a chart-topping day for unforgettable songs."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 1"
+          "text": "July 8"
         }
       ]
     },
     {
-      "row": 241,
-      "post_date": "2026-07-02",
-      "filename": "otd_2026-07-02_july-2nd-chart-toppers",
+      "row": 248,
+      "post_date": "2026-07-09",
+      "filename": "otd_2026-07-09_permission-to-dance-and-police",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Frank Sinatra crooning to Drake ruling the charts, July 2nd is packed with iconic hits."
+          "text": "BTS, Alanis Morissette, and The Police light up the charts, while Elton John and Red Hot Chili Peppers drop iconic albums."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 2"
-        }
-      ]
-    },
-    {
-      "row": 242,
-      "post_date": "2026-07-03",
-      "filename": "otd_2026-07-03_july-3-chart-anthems",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Pop, soul, and synth anthems stormed the charts on July 3 through the decades."
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 3"
-        }
-      ]
-    },
-    {
-      "row": 243,
-      "post_date": "2026-07-04",
-      "filename": "otd_2026-07-04_fireworks-and-chart-toppers",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Adele, The Beach Boys, and Sir Mix-a-Lot light up July 4th music history!"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 4"
-        }
-      ]
-    },
-    {
-      "row": 244,
-      "post_date": "2026-07-05",
-      "filename": "otd_2026-07-05_katy-perry-gotye-billy-ocean",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Pop icons, chart-toppers, and a little musical mayhem all shared this day!"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 5"
-        }
-      ]
-    },
-    {
-      "row": 245,
-      "post_date": "2026-07-06",
-      "filename": "otd_2026-07-06_chart-toppers-galore",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Rolling Stones, Gladys Knight, Phil Collins, and Miley Cyrus light up this chart-topping day!"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 6"
-        }
-      ]
-    },
-    {
-      "row": 246,
-      "post_date": "2026-07-07",
-      "filename": "otd_2026-07-07_beatles-floyd-prince-taylor-hits",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From The Beatles to Taylor Swift, today’s music history is pure hit parade magic!"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 7"
+          "text": "July 9"
         }
       ]
     }

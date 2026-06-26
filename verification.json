@@ -754,5 +754,17 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-06-24T01:09:56.138113+00:00",
     "bytes": 131230
+  },
+  "otd_2026-07-08_lean-on-tlc-waterfalls-day": {
+    "hash": "e119c1b82def630951931cc9a2ac902bc5d9a97b675877de25d4d8c64e9e201a",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-26T01:02:07.306791+00:00",
+    "bytes": 131345
+  },
+  "otd_2026-07-09_permission-to-dance-and-police": {
+    "hash": "e9682488374042856c45de55e2cf0fb8be1e06f06d0e82c43ebddae40d5d7c4a",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-06-26T01:03:01.776969+00:00",
+    "bytes": 144845
   }
 }
