@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-06-26T01:00:58.467142+00:00",
+  "generated_at": "2026-06-29T08:48:06.753592+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,36 +33,70 @@
   ],
   "items": [
     {
-      "row": 247,
-      "post_date": "2026-07-08",
-      "filename": "otd_2026-07-08_lean-on-tlc-waterfalls-day",
+      "row": 249,
+      "post_date": "2026-07-10",
+      "filename": "otd_2026-07-10_rolling-stones-channel-orange",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Bill Withers to TLC, July 8th is a chart-topping day for unforgettable songs."
+          "text": "Rolling Stones, Soft Cell, and Frank Ocean light up On This Day history."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 8"
+          "text": "July 10"
         }
       ]
     },
     {
-      "row": 248,
-      "post_date": "2026-07-09",
-      "filename": "otd_2026-07-09_permission-to-dance-and-police",
+      "row": 250,
+      "post_date": "2026-07-11",
+      "filename": "otd_2026-07-11_jukebox-july-11-chart-toppers",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "BTS, Alanis Morissette, and The Police light up the charts, while Elton John and Red Hot Chili Peppers drop iconic albums."
+          "text": "From Chuck Berry to Madonna, July 11 is a jukebox of chart-toppers and genre-benders."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 9"
+          "text": "July 11"
+        }
+      ]
+    },
+    {
+      "row": 251,
+      "post_date": "2026-07-12",
+      "filename": "otd_2026-07-12_beyonce-simply-red-bjork-milestones",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Beyoncé, Simply Red, and Björk light up July 12th music history"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "July 12"
+        }
+      ]
+    },
+    {
+      "row": 252,
+      "post_date": "2026-07-13",
+      "filename": "otd_2026-07-13_queen-to-shaboozey-summer-hits",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "From Queen’s debut to Shaboozey’s chart-topper, July 13 is packed with musical milestones."
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "July 13"
         }
       ]
     }

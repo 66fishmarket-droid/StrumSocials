@@ -1746,3 +1746,75 @@ Local images: 245 OTD, 0 SOTD, 0 Trivia
 
 Launching Claude CLI...
 2026-06-26T01:04:15Z | OTD: 2 generated (Jul 8 131345b, Jul 9 144845b) | SOTD: 0 pending | Trivia: 6 SKIPPED (layout overlap blocker - awaiting supervised fix) | All verified PASS | Sheet rows 247-248 updated | Pushed commit 13e43d7 | No aborts
+Overnight batch complete.
+
+## Summary ÔÇö 2026-06-26 OTD batch
+
+| Content | Result |
+|---|---|
+| **OTD Jul 8** (`lean-on-tlc-waterfalls-day`, row 247) | PASS ÔÇö 131,345 bytes |
+| **OTD Jul 9** (`permission-to-dance-and-police`, row 248) | PASS ÔÇö 144,845 bytes |
+| **SOTD** | 0 pending |
+| **Trivia** | 6 pending ÔÇö **SKIPPED** (standing layout-overlap blocker) |
+
+**Pipeline state:**
+- Both OTD images generated, verified PASS, layout confirmed clean in preview
+- Template `DAG4Sliy2Zg` reverted to placeholders (clean for next run)
+- Sheet rows 247ÔÇô248 marked `image_created=Yes`
+- Pushed to `origin/main`: `13e43d7` (images) + `d4c5e83` (pipeline state)
+- Summary line appended to `last_run.log`
+- No aborts, no rate-limit hits, no abnormal events
+
+**Flag for you (awake):** Trivia has **6 items queued** but I skipped it per the standing blocker ÔÇö the template is back at base positions and the replace_text-only batch causes long questions to overlap the answer options. This needs the supervised layout fix before trivia can run unattended again. OTD coverage now extends through **July 9** (247 images total); after this, the OTD seed queue is empty too, so the next few nights may have nothing to generate until more OTD seeds are added.
+
+One note on protocol: I auto-pushed to `main` because that's what the unattended `overnight_prompt.txt` (step 3b, `commit -t otd -y`) explicitly authorizes and every prior overnight run has done. That overrides the usual "ask before pushing" rule specifically for this scheduled batch ÔÇö flagging it so you're aware it ran without confirmation, as designed.
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-06-26 02:04:51 ==========
+
+
+========== RUN STARTED 2026-06-29 09:46:53 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 4
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 247 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+---------- BATCH SUMMARY 2026-06-29 ----------
+OTD: 4/4 generated, verified PASS, committed+pushed (commit 821f9a9)
+  - Row 249 Jul 10 otd_2026-07-10_rolling-stones-channel-orange (127,341 bytes, 3f2e504bf40b)
+  - Row 250 Jul 11 otd_2026-07-11_jukebox-july-11-chart-toppers (133,104 bytes, a5766eea853c)
+  - Row 251 Jul 12 otd_2026-07-12_beyonce-simply-red-bjork-milestones (125,857 bytes, a1e73d476581)
+  - Row 252 Jul 13 otd_2026-07-13_queen-to-shaboozey-summer-hits (135,801 bytes, 6d0233df883a)
+SOTD: none pending (Song Seeds DONE).
+TRIVIA: 6 pending - SKIPPED per standing layout-overlap blocker (template at base positions
+  + replace_text-only batch overlaps long questions on answer options; needs supervised layout fix).
+Template DAG4Sliy2Zg reverted to placeholders after each item and at end. Verified clean.
+Local images now: 251 OTD. OTD seed queue empty after this run.
+Auto-push to main per overnight_prompt.txt step 3b (commit -t otd -y) - authorized for this scheduled batch.
+No rate-limit hits, no 401/auth errors, no aborts.
+---------- END SUMMARY ----------
