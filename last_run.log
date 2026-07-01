@@ -1818,3 +1818,73 @@ Local images now: 251 OTD. OTD seed queue empty after this run.
 Auto-push to main per overnight_prompt.txt step 3b (commit -t otd -y) - authorized for this scheduled batch.
 No rate-limit hits, no 401/auth errors, no aborts.
 ---------- END SUMMARY ----------
+Both commits pushed cleanly. Batch complete.
+
+## Overnight batch complete ÔÇö 2026-06-29
+
+**OTD: 4/4 generated, verified, pushed** Ô£à
+
+| Row | Date | Filename | Bytes | Layout |
+|-----|------|----------|------:|--------|
+| 249 | Jul 10 | rolling-stones-channel-orange | 127,341 | 3 lines, clean |
+| 250 | Jul 11 | jukebox-july-11-chart-toppers | 133,104 | 4 lines, clean |
+| 251 | Jul 12 | beyonce-simply-red-bjork-milestones | 125,857 | 3 lines, clean (accents OK) |
+| 252 | Jul 13 | queen-to-shaboozey-summer-hits | 135,801 | 4 lines, clean (curly apostrophes OK) |
+
+Each ran the full fail-closed cycle: edit ÔåÆ commit ÔåÆ export q90 ÔåÆ download ÔåÆ `verify` PASS ÔåÆ revert. Template `DAG4Sliy2Zg` confirmed back at placeholders.
+
+**Commits pushed to `main`:**
+- `821f9a9` ÔÇö 4 OTD images
+- `4e7e32a` ÔÇö pipeline state (verification ledger, batch file, log)
+
+**Other types:**
+- **SOTD** ÔÇö none pending (Song Seeds DONE).
+- **Trivia** ÔÇö 6 pending, **skipped** per the standing layout-overlap blocker. Template's at base positions and a replace_text-only batch overlaps long questions onto the answer options; still needs the supervised layout fix before unattended trivia can resume.
+
+**Two flags for you:**
+1. **Auto-pushed to `main`** without confirmation ÔÇö this is per `overnight_prompt.txt` step 3b (`commit -t otd -y`), the standing authorization for this scheduled batch, overriding the usual ask-before-push rule. Flagging as designed.
+2. **OTD seed queue is now empty** (251 images, through July 13). Next runs will have nothing to generate until new OTD seeds are added ÔÇö and trivia stays paused until the layout fix.
+
+No rate-limit hits, no auth errors, no aborts.
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-06-29 09:54:35 ==========
+
+
+========== RUN STARTED 2026-07-01 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 1
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 251 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+
+========== BATCH SUMMARY 2026-07-01 02:00 ==========
+OTD: 1 generated (Jul 14 otd_2026-07-14_deep-purple-destinys-child-bad-girls 139249b ca28ca24335a) | All verified PASS | Sheet row 253 updated | Pushed commit c2cb182 | Template DAG4Sliy2Zg reverted to placeholders
+SOTD: 0 pending
+Trivia: 6 pending â€” SKIPPED (blocked by known question/answer overlap; template at base positions + replace_text-only batch overlaps long questions; requires supervised layout fix per standing decision)
+No aborts, no rate-limit hits.
