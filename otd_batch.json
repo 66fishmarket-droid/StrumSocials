@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-07-01T01:01:14.541787+00:00",
+  "generated_at": "2026-07-03T01:00:47.951440+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,19 +33,36 @@
   ],
   "items": [
     {
-      "row": 253,
-      "post_date": "2026-07-14",
-      "filename": "otd_2026-07-14_deep-purple-destinys-child-bad-girls",
+      "row": 254,
+      "post_date": "2026-07-15",
+      "filename": "otd_2026-07-15_chart-toppers-on-july-15",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Deep Purple’s fiery riffs to Destiny’s Child’s iconic album, July 14 is a chart-topping time machine."
+          "text": "Chart-toppers and future anthems dropped on July 15—from Procol Harum to Olivia Rodrigo!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 14"
+          "text": "July 15"
+        }
+      ]
+    },
+    {
+      "row": 255,
+      "post_date": "2026-07-16",
+      "filename": "otd_2026-07-16_jukebox-heroes-july-16",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "From Tommy James & the Shondells to Rihanna, July 16 brings a chart-topping parade through music history!"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "July 16"
         }
       ]
     }

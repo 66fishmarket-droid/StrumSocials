@@ -1888,3 +1888,67 @@ OTD: 1 generated (Jul 14 otd_2026-07-14_deep-purple-destinys-child-bad-girls 139
 SOTD: 0 pending
 Trivia: 6 pending â€” SKIPPED (blocked by known question/answer overlap; template at base positions + replace_text-only batch overlaps long questions; requires supervised layout fix per standing decision)
 No aborts, no rate-limit hits.
+Overnight batch complete.
+
+## Summary ÔÇö 2026-07-01 02:00
+
+| Type | Result |
+|------|--------|
+| **OTD** | 1 generated ÔÇö `otd_2026-07-14_deep-purple-destinys-child-bad-girls.jpg` (139,249 b, hash `ca28ca24335a`) ÔÇö verify **PASS**, sheet row 253 marked, template reverted to placeholders |
+| **SOTD** | 0 pending |
+| **Trivia** | 6 pending ÔÇö **SKIPPED** (fail-closed) |
+
+**Pushed to `origin/main`:**
+- `c2cb182` ÔÇö July 14 OTD image
+- `1ecabe3` ÔÇö pipeline state (log, batch file, verification ledger)
+
+OTD queue now **DONE** (252 local images). SOTD **DONE**. No aborts, no rate-limit hits, no auth errors. Canva template `DAG4Sliy2Zg` left clean.
+
+**Why trivia was skipped (unchanged blocker):** the trivia template `DAG32T-T8gU` sits at base element positions and the `batch -t trivia` generator emits `replace_text`-only ops ÔÇö so long questions (rows 66 "Blur/Song 2" and others) wrap and overlap the A/B/C answers, and `verify` (hash/bytes only) won't catch it. Per the standing decision, trivia stays blocked from unattended runs until a **supervised** layout fix lands ÔÇö either bake the wide universal layout permanently into the template, or add conditional position-shift ops to the generator keyed on question length. Those 6 items will keep showing as TODO until then.
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-07-01 02:03:52 ==========
+
+
+========== RUN STARTED 2026-07-03 02:00:00 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 252 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+========== BATCH SUMMARY 2026-07-03 02:00 ==========
+Types processed:
+  OTD:    2 generated (rows 254/255 - Jul 15/16), both verified PASS, sheet updated, pushed (commit e5fc662).
+  SOTD:   0 pending - nothing to do.
+  TRIVIA: 6 pending - SKIPPED (known layout-overlap blocker; requires supervised layout fix).
+Verify: otd_2026-07-15 (134,659 bytes) PASS; otd_2026-07-16 (141,617 bytes) PASS.
+Canva template DAG4Sliy2Zg reverted to placeholder state (clean).
+Local images now: 254 OTD.
+No aborts, no rate-limit hits, no 401/auth errors.
+Overnight batch complete.
+========== END SUMMARY ==========

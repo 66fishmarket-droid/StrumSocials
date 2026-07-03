@@ -796,5 +796,17 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-07-01T01:02:18.690344+00:00",
     "bytes": 139249
+  },
+  "otd_2026-07-15_chart-toppers-on-july-15": {
+    "hash": "0541da330f7b76bb25f1bdaf66bfbce3cc55c46413c5bf124dbf877695b5340b",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-03T01:02:00.312336+00:00",
+    "bytes": 134659
+  },
+  "otd_2026-07-16_jukebox-heroes-july-16": {
+    "hash": "d50dd770aef75630419ca6028b887b796cee9077adc01a6d3c2f820f7ccca271",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-03T01:02:52.593554+00:00",
+    "bytes": 141617
   }
 }
