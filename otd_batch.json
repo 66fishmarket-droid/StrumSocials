@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-07-03T01:00:47.951440+00:00",
+  "generated_at": "2026-07-06T01:00:52.888329+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,36 +33,53 @@
   ],
   "items": [
     {
-      "row": 254,
-      "post_date": "2026-07-15",
-      "filename": "otd_2026-07-15_chart-toppers-on-july-15",
+      "row": 256,
+      "post_date": "2026-07-17",
+      "filename": "otd_2026-07-17_july-17-hitmakers",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-toppers and future anthems dropped on July 15—from Procol Harum to Olivia Rodrigo!"
+          "text": "From chart-topping bops to classic albums, July 17th has always brought the hits."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 15"
+          "text": "July 17"
         }
       ]
     },
     {
-      "row": 255,
-      "post_date": "2026-07-16",
-      "filename": "otd_2026-07-16_jukebox-heroes-july-16",
+      "row": 257,
+      "post_date": "2026-07-18",
+      "filename": "otd_2026-07-18_july-18-summer-hits",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Tommy James & the Shondells to Rihanna, July 16 brings a chart-topping parade through music history!"
+          "text": "From Brenda Lee to Destiny’s Child, July 18 has always brought the summer hits."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 16"
+          "text": "July 18"
+        }
+      ]
+    },
+    {
+      "row": 258,
+      "post_date": "2026-07-19",
+      "filename": "otd_2026-07-19_dylan-to-drake-chart-toppers",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Chart-toppers and legends: Dylan, Stevie Wonder, Billy Joel, and Drake light up July 19!"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
+          "text": "July 19"
         }
       ]
     }

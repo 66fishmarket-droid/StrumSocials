@@ -1952,3 +1952,61 @@ Local images now: 254 OTD.
 No aborts, no rate-limit hits, no 401/auth errors.
 Overnight batch complete.
 ========== END SUMMARY ==========
+Overnight batch complete. Summary:
+
+## Batch Summary ÔÇö 2026-07-03
+
+| Type | Result |
+|------|--------|
+| **OTD** | Ô£à 2 generated (rows 254/255, Jul 15/16) ÔÇö both verified PASS, sheet updated, pushed |
+| **SOTD** | ÔÇö 0 pending, nothing to do |
+| **Trivia** | ÔÅ¡´©Å 6 pending, **skipped** ÔÇö known layout-overlap blocker, needs supervised fix |
+
+**What ran:**
+- Preflight confirmed template `DAG4Sliy2Zg` was clean at placeholder state
+- Item 1 (Jul 15, Procol HarumÔåÆOlivia Rodrigo): exported q90, 134,659 bytes, verify PASS
+- Item 2 (Jul 16, Tommy JamesÔåÆRihanna): exported q90, 141,617 bytes, verify PASS
+- Template reverted to placeholders and committed (left clean for next run)
+- Sheet marked rows 254/255 = Yes
+- Pushed **e5fc662** (2 images) + **70941d0** (pipeline state)
+
+**Final state:** OTD queue now **DONE** (254 local images), SOTD **DONE**. Trivia remains the only outstanding work ÔÇö still blocked pending the supervised question/answer-overlap layout fix.
+
+No aborts, no rate-limit hits, no auth errors. All guardrails respected.
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-07-03 02:04:37 ==========
+
+
+========== RUN STARTED 2026-07-06 02:00:00 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 3
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 254 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+[2026-07-06 02:05] BATCH SUMMARY: OTD 3/3 generated+verified+pushed (rows 256-258, Jul 17-19; commit 69e58f1). Jul 17 131760b, Jul 18 131506b, Jul 19 134603b â€” all verify PASS. SOTD 0 pending. TRIVIA 6 pending SKIPPED (documented long-question overlap blocker; awaits supervised layout fix). Template DAG4Sliy2Zg reverted to placeholders. No 429/401, no aborts. Images this run: 3/30. Local OTD count 254 -> 257.

@@ -808,5 +808,23 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-07-03T01:02:52.593554+00:00",
     "bytes": 141617
+  },
+  "otd_2026-07-17_july-17-hitmakers": {
+    "hash": "4c77ce1b61176575e936f215a111a9a42032e69f18b12227aa045a9695a960e6",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-06T01:02:07.149001+00:00",
+    "bytes": 131760
+  },
+  "otd_2026-07-18_july-18-summer-hits": {
+    "hash": "3e823db3ff536bdcb6b7113b3238b56b985f0f7882cfa8fa5ab7d3b7e8ccb8d3",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-06T01:03:04.254627+00:00",
+    "bytes": 131506
+  },
+  "otd_2026-07-19_dylan-to-drake-chart-toppers": {
+    "hash": "69a6d7e5685db1734d35af7ecd543c29a4d6c7c5324ae043948005d7822cfa12",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-06T01:03:41.227373+00:00",
+    "bytes": 134603
   }
 }
