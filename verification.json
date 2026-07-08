@@ -826,5 +826,17 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-07-06T01:03:41.227373+00:00",
     "bytes": 134603
+  },
+  "otd_2026-07-20_dylan-presley-masekela-july20": {
+    "hash": "7ba3e400ccc8fc2951aba8d7380f4f5ad9a828cfc6c2661b73f3a9e3b35d7b68",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-08T01:02:22.471743+00:00",
+    "bytes": 131853
+  },
+  "otd_2026-07-21_album-release-triple-threat": {
+    "hash": "35a2ed3d6b081585c2651ab5f358f17a59b3417457a03c1613a761ea0ad1d69d",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-08T01:03:08.186880+00:00",
+    "bytes": 134956
   }
 }

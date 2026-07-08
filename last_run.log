@@ -2010,3 +2010,64 @@ Local images: 254 OTD, 0 SOTD, 0 Trivia
 Launching Claude CLI...
 
 [2026-07-06 02:05] BATCH SUMMARY: OTD 3/3 generated+verified+pushed (rows 256-258, Jul 17-19; commit 69e58f1). Jul 17 131760b, Jul 18 131506b, Jul 19 134603b ‚Äî all verify PASS. SOTD 0 pending. TRIVIA 6 pending SKIPPED (documented long-question overlap blocker; awaits supervised layout fix). Template DAG4Sliy2Zg reverted to placeholders. No 429/401, no aborts. Images this run: 3/30. Local OTD count 254 -> 257.
+Overnight batch complete. Summary:
+
+## ‘£‡ Batch done ‘«ˆ 3 OTD images generated, verified, pushed
+
+| Item | Date | Row | Size | Verify |
+|------|------|-----|------|--------|
+| Jul 17 ‘«Ù hitmakers | 2026-07-17 | 256 | 131,760 b | PASS |
+| Jul 18 ‘«Ù summer hits | 2026-07-18 | 257 | 131,506 b | PASS |
+| Jul 19 ‘«Ù Dylan to Drake | 2026-07-19 | 258 | 134,603 b | PASS |
+
+**Protocol adherence:** Fail-closed driver protocol followed per item (preflight ‘Â∆ edit ‘Â∆ commit ‘Â∆ export JPG q90 ‘Â∆ download ‘Â∆ verify ‘Â∆ next). All 3 passed verification; template `DAG4Sliy2Zg` reverted to placeholders and confirmed clean.
+
+**Git:**
+- `69e58f1` ‘«ˆ 3 OTD images (pushed to main)
+- `634f6b0` ‘«ˆ pipeline state (last_run.log, otd_batch.json, verification.json)
+
+**Queues now:**
+- OTD: **0 pending** (cleared, 254 ‘Â∆ 257 local)
+- SOTD: **0 pending**
+- Trivia: **6 pending ‘«ˆ SKIPPED** per the standing long-question overlap blocker; still awaits a supervised layout fix before automated runs can touch it.
+
+**Guardrails:** No 429/401, no auth issues, no aborts. 3/30 image cap used. No questions raised ‘«ˆ nothing ambiguous.
+
+The only outstanding work is trivia, which remains blocked and needs your supervised layout fix (template positions + a batch that repositions/resizes rather than replace_text-only). Everything else is clear.
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-07-06 02:05:38 ==========
+
+
+========== RUN STARTED 2026-07-08 02:00:00 ==========
+============================================================
+Strum! Social Media Automation ˘ Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 257 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+2026-07-08T01:15Z | OTD: 2 generated (Jul 20 131853b 7ba3e400ccc8, Jul 21 134956b 35a2ed3d6b08) | SOTD: 0 pending | Trivia: 6 pending but SKIPPED (overlap layout blocker, needs supervised fix) | All verified PASS | Sheet rows 259-260 updated | Template reverted to placeholders | No aborts, no rate-limit

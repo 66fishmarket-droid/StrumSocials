@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-07-06T01:00:52.888329+00:00",
+  "generated_at": "2026-07-08T01:01:17.830370+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,53 +33,36 @@
   ],
   "items": [
     {
-      "row": 256,
-      "post_date": "2026-07-17",
-      "filename": "otd_2026-07-17_july-17-hitmakers",
+      "row": 259,
+      "post_date": "2026-07-20",
+      "filename": "otd_2026-07-20_dylan-presley-masekela-july20",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From chart-topping bops to classic albums, July 17th has always brought the hits."
+          "text": "Dylan, Presley, and Masekela light up July 20 with classic hits and music history."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 17"
+          "text": "July 20"
         }
       ]
     },
     {
-      "row": 257,
-      "post_date": "2026-07-18",
-      "filename": "otd_2026-07-18_july-18-summer-hits",
+      "row": 260,
+      "post_date": "2026-07-21",
+      "filename": "otd_2026-07-21_album-release-triple-threat",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Brenda Lee to Destiny’s Child, July 18 has always brought the summer hits."
+          "text": "From Black Sabbath to Guns N’ Roses and Linkin Park, it’s an album release day for the ages!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 18"
-        }
-      ]
-    },
-    {
-      "row": 258,
-      "post_date": "2026-07-19",
-      "filename": "otd_2026-07-19_dylan-to-drake-chart-toppers",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-toppers and legends: Dylan, Stevie Wonder, Billy Joel, and Drake light up July 19!"
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 19"
+          "text": "July 21"
         }
       ]
     }
