@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-07-08T01:01:17.830370+00:00",
+  "generated_at": "2026-07-10T01:01:05.066080+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,36 +33,36 @@
   ],
   "items": [
     {
-      "row": 259,
-      "post_date": "2026-07-20",
-      "filename": "otd_2026-07-20_dylan-presley-masekela-july20",
+      "row": 261,
+      "post_date": "2026-07-22",
+      "filename": "otd_2026-07-22_july-22-hit-parade",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Dylan, Presley, and Masekela light up July 20 with classic hits and music history."
+          "text": "Chart-toppers from Stevie Wonder, Bon Jovi, and Taylor Swift light up July 22nd!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 20"
+          "text": "July 22"
         }
       ]
     },
     {
-      "row": 260,
-      "post_date": "2026-07-21",
-      "filename": "otd_2026-07-21_album-release-triple-threat",
+      "row": 262,
+      "post_date": "2026-07-23",
+      "filename": "otd_2026-07-23_july-23-hit-parade",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Black Sabbath to Guns N’ Roses and Linkin Park, it’s an album release day for the ages!"
+          "text": "Chart-toppers, classic hits, and legendary album drops all landed on July 23!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 21"
+          "text": "July 23"
         }
       ]
     }

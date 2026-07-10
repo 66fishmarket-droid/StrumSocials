@@ -2071,3 +2071,71 @@ Local images: 257 OTD, 0 SOTD, 0 Trivia
 Launching Claude CLI...
 
 2026-07-08T01:15Z | OTD: 2 generated (Jul 20 131853b 7ba3e400ccc8, Jul 21 134956b 35a2ed3d6b08) | SOTD: 0 pending | Trivia: 6 pending but SKIPPED (overlap layout blocker, needs supervised fix) | All verified PASS | Sheet rows 259-260 updated | Template reverted to placeholders | No aborts, no rate-limit
+Origin is current through the last run's commit (634f6b0) ÔÇö so prior runs did push, and my 2 commits are the only ones ahead. 
+
+I'm holding the push. Reasoning: the global rule is emphatic ÔÇö *always ask before pushing to main* ÔÇö and this is a non-interactive session where I can't ask. Critically, there's **no operational cost** to waiting: the content is dated Jul 20ÔÇô21 and today is Jul 8, so it doesn't need to publish for 12 days. The commits are clean and reviewable, ready to push on your word.
+
+## Batch complete ÔÇö 2026-07-08 overnight run
+
+| Type | Result |
+|------|--------|
+| **OTD** | Ô£à 2/2 generated, verified PASS, sheet updated |
+| **SOTD** | 0 pending |
+| **Trivia** | ÔÜá´©Å 6 pending ÔÇö **SKIPPED** (layout blocker) |
+
+**OTD images delivered:**
+- `otd_2026-07-20_dylan-presley-masekela-july20.jpg` ÔÇö 131,853 b, `7ba3e400ccc8` ÔÇö PASS
+- `otd_2026-07-21_album-release-triple-threat.jpg` ÔÇö 134,956 b, `35a2ed3d6b08` ÔÇö PASS
+
+**Pipeline state:**
+- Preflight PASS (template was at placeholders); both cards rendered clean (4-line factoids, no overflow, curly apostrophes preserved)
+- Sheet `OnThisDay Seeds` rows 259ÔÇô260 ÔåÆ `image_created=Yes`
+- Canva template `DAG4Sliy2Zg` reverted to placeholders ÔÇö clean for next run
+- `last_run.log` summary appended
+- 258 total OTD images in repo
+
+**Trivia skipped (per guardrails):** 6 rows pending, but the template sits at base positions and the `batch -t trivia` generator emits `replace_text`-only ops ÔÇö long questions overlap the answer options, and `verify` can't catch visual overlap. Unattended runs must skip trivia until a **supervised layout fix** (bake the wide universal layout into the template, or add conditional position-shift ops). No unauthorized template surgery attempted.
+
+**Git ÔÇö awaiting your confirmation to push:**
+- 2 local commits ahead of `origin/main` (`62e2450` images, `1e4d5e1` pipeline state)
+- No push performed, per your standing "ask before pushing to main" rule
+- Say the word and I'll `git push origin main`
+
+No aborts, no rate-limit hits, no auth failures.
+claude.cmd : SessionEnd hook [_R="${CLAUDE_PLUGIN_ROOT}"; [ -z "$_R" ] && 
+_R="$HOME/.claude/plugins/marketplaces/thedotmack/plugin"; node "$_R/scripts/bun-runner.js" 
+"$_R/scripts/worker-service.cjs" hook claude-code session-complete] failed: Hook cancelled
+At C:\Users\matty\projects\StrumSocials\scripts\overnight_run.ps1:45 char:11
++ $output = & $claudeExe `
++           ~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SessionEnd hook... Hook cancelled:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-07-08 02:05:32 ==========
+
+
+========== RUN STARTED 2026-07-10 02:00:00 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 259 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+2026-07-10T02:0XZ | OTD: 2 generated (Jul 22 131777b 24dc261c3cc0, Jul 23 130700b 90fe525fc631) | SOTD: 0 pending | Trivia: 6 pending but SKIPPED (overlap layout blocker, needs supervised fix) | All verified PASS | Sheet rows 261-262 updated | Template reverted to placeholders | No aborts, no rate-limit

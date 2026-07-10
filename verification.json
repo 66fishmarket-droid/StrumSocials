@@ -838,5 +838,17 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-07-08T01:03:08.186880+00:00",
     "bytes": 134956
+  },
+  "otd_2026-07-22_july-22-hit-parade": {
+    "hash": "24dc261c3cc021bb665c5502629d4b0e86eab9ec16e38abf110dbe6d0b984967",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-10T01:02:02.521668+00:00",
+    "bytes": 131777
+  },
+  "otd_2026-07-23_july-23-hit-parade": {
+    "hash": "90fe525fc631518c68a6c1d53fe9701364925850c57ef868fbb6f412fb27ab83",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-10T01:03:09.792422+00:00",
+    "bytes": 130700
   }
 }
