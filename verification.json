@@ -850,5 +850,23 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-07-10T01:03:09.792422+00:00",
     "bytes": 130700
+  },
+  "otd_2026-07-24_eye-of-the-tiger-to-folklore": {
+    "hash": "4a26513c173a51a0a5318cdd8d1ebc9e1f98a8665661d1c72789729036baf86b",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-13T01:40:46.386518+00:00",
+    "bytes": 131559
+  },
+  "otd_2026-07-25_back-in-black-and-beyond": {
+    "hash": "ec2ddb951a9519956530064ece2364b0ac3ed97de72ccfab96028465d99e1eb8",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-13T02:00:07.456002+00:00",
+    "bytes": 130214
+  },
+  "otd_2026-07-26_chart-toppers-and-disco-fever": {
+    "hash": "c495ca33d492b6ae1a57894605f22ae1da776bb5a10556c9bfe78093464eed58",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-13T02:19:24.485231+00:00",
+    "bytes": 137087
   }
 }

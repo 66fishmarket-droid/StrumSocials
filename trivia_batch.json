@@ -13,7 +13,7 @@
     "option_b": "B. {{Option B}}",
     "option_c": "C. {{Option C}}"
   },
-  "generated_at": "2026-06-03T01:01:04.016870+00:00",
+  "generated_at": "2026-07-13T01:11:25.813845+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -87,6 +87,114 @@
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
           "text": "C. Ryan Reynolds"
+        }
+      ]
+    },
+    {
+      "row": 68,
+      "post_date": "2026-06-08",
+      "filename": "trivia-breakfast-tiffanys",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Which band had a 90s hit with 'Breakfast at Tiffany's'?"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
+          "text": "A. Deep Blue Something"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
+          "text": "B. Third Eye Blind"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
+          "text": "C. Spin Doctors"
+        }
+      ]
+    },
+    {
+      "row": 69,
+      "post_date": "2026-06-08",
+      "filename": "trivia-billy-elliot-musical",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Who played the title role in the musical 'Billy Elliot' on London's West End first?"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
+          "text": "A. Jamie Bell"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
+          "text": "B. Liam Mower"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
+          "text": "C. Tom Holland"
+        }
+      ]
+    },
+    {
+      "row": 70,
+      "post_date": "2026-06-15",
+      "filename": "trivia-human-league-dont-you-want-me",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Which band had a UK hit with 'Don't You Want Me' in the 80s synth-pop era?"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
+          "text": "A. Duran Duran"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
+          "text": "B. The Human League"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
+          "text": "C. Spandau Ballet"
+        }
+      ]
+    },
+    {
+      "row": 71,
+      "post_date": "2026-06-15",
+      "filename": "trivia-johnny-depp-willy-wonka",
+      "operations": [
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
+          "text": "Who played the eccentric Willy Wonka in the 2005 film adaptation of 'Charlie and the Chocolate Factory'?"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LB5YKvfczJMPGd5K",
+          "text": "A. Gene Wilder"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBFKRnQdqhnsFjSs",
+          "text": "B. Johnny Depp"
+        },
+        {
+          "type": "replace_text",
+          "element_id": "PBjpwX1gm3tngz74-LBXR7Cx6XZhzyHfC",
+          "text": "C. Jim Carrey"
         }
       ]
     }
