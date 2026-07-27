@@ -2203,3 +2203,374 @@ Local images: 261 OTD, 0 SOTD, 0 Trivia
 Launching Claude CLI...
 
 2026-07-13T02:39:05Z | OTD: 3 generated (Jul 24 131559b 4a26513c173a, Jul 25 130214b ec2ddb951a95, Jul 26 137087b c495ca33d492) | SOTD: 0 pending | Trivia: 6 SKIPPED (long-question overlap blocker, needs supervised template fix) | All OTD verified PASS | Sheet rows 263-265 updated | Pushed commit a70100a | No aborts, no rate-limit issues
+Overnight batch complete. Everything shipped clean and pushed.
+
+## Summary ÔÇö 2026-07-13 overnight run
+
+**OTD: 3/3 generated, verified PASS, pushed**
+
+| Date | File | Bytes | Hash |
+|------|------|------:|------|
+| Jul 24 | otd_2026-07-24_eye-of-the-tiger-to-folklore | 131,559 | 4a26513c173a |
+| Jul 25 | otd_2026-07-25_back-in-black-and-beyond | 130,214 | ec2ddb951a95 |
+| Jul 26 | otd_2026-07-26_chart-toppers-and-disco-fever | 137,087 | c495ca33d492 |
+
+- Preflight confirmed placeholders before each item; template `DAG4Sliy2Zg` **reverted to clean placeholder state** after every export (verified visually each time).
+- Sheet `OnThisDay Seeds` rows 263ÔÇô265 marked `image_created=Yes` + image URLs written.
+- Two commits pushed to `origin/main`: `a70100a` (images, also flushed 4 prior unpushed commits) + `6e7b942` (ledger/batch/log). Working tree clean apart from the pre-existing stale untracked files.
+
+**SOTD:** 0 pending ÔÇö nothing to do.
+
+**Trivia: 6 pending ÔÇö SKIPPED (intentional).** The `batch -t trivia` generator still emits `replace_text`-only ops with no position/resize shifts, so long questions overlap the A/B/C options. Rows 69 (Billy Elliot, 83 chars) and 71 (Willy Wonka, 103 chars) would overlap badly, and `verify` is hash-only ÔÇö it can't catch visual overlap. Per your standing "eyeball trivia spacing before publishing" rule and the runbook's "if ambiguous, log and skip," I left all 6 for a **supervised** fix. Logged in `last_run.log` and refreshed the blocker memory.
+
+**No aborts, no rate-limit hits, no auth issues.**
+
+To clear trivia you'll need one supervised session to either bake the wide "universal" layout permanently into template `DAG32T-T8gU`, or add conditional position-shift ops (by question char length) to the trivia batch generator ÔÇö then trivia can run unattended again.
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-07-13 03:52:11 ==========
+
+
+========== RUN STARTED 2026-07-15 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 264 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+2026-07-15T01:05:10Z | OTD: 2 generated (rows 266-267, Jul 27-28) | SOTD: 0 pending | Trivia: 6 SKIPPED (overlap blocker, needs supervised layout fix) | All verified PASS | Sheet updated (rows 266-267) | Pushed commit 26536fa | No aborts, no rate-limit issues
+Overnight batch complete.
+
+## Summary ÔÇö 2026-07-15 run
+
+| Content | Count | Status |
+|---------|------:|--------|
+| **OTD** | 2 | Ô£à Generated, verified, sheet updated, **pushed** (`26536fa`) |
+| **SOTD** | 0 | Nothing pending |
+| **Trivia** | 6 | ÔÅ¡´©Å **Skipped** ÔÇö standing overlap blocker |
+
+**OTD images (rows 266-267), both `[PASS]`:**
+- `otd_2026-07-27_highway-to-hell-to-rickroll.jpg` ÔÇö 137,662 bytes (`324a41f39e2a`)
+- `otd_2026-07-28_diamond-life-delilah-and-jackson.jpg` ÔÇö 136,472 bytes (`cbff7a9e18cd`)
+
+Both rendered clean (text fit, no overflow), verified fail-closed, sheet `OnThisDay Seeds` rows 266-267 marked `image_created=Yes` + public image URL written. OTD template `DAG4Sliy2Zg` left in clean placeholder state.
+
+**Trivia skipped** per the standing blocker: `batch -t trivia` still emits replace_text-only ops and `verify` can't detect visual overlap, so shipping the 6 pending long-question rows unattended is unsafe. Needs the supervised layout fix.
+
+## ÔÜá´©Å One thing for you when you wake
+
+The images are **on `origin/main`** (pushed via the sanctioned `commit -t otd -y` wrapper). But the follow-up **"Update pipeline state" bookkeeping commit was blocked** ÔÇö the auto-mode classifier denied direct `git commit`/`push` to `main` in this unattended session (your CLAUDE.md "always ask before committing to main" rule, correctly enforced). I did not work around it.
+
+**Left uncommitted in the working tree for you to commit + push:**
+- `verification.json` (2 new ledger entries)
+- `otd_batch.json` (this run's batch)
+- `last_run.log` (summary line appended)
+
+Suggested: `git add verification.json otd_batch.json last_run.log && git commit -m "Update pipeline state: OTD Jul 27-28 (rows 266-267)" && git push`
+
+No rate-limit hits, no aborts, no template left dirty. I recorded the commit-guard behavior to memory so future overnight runs don't burn cycles retrying the blocked commit.
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-07-15 02:07:48 ==========
+
+
+========== RUN STARTED 2026-07-17 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 266 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+2026-07-17T01:05:36Z | OTD: 2 generated (Jul 29 127487b 1b1cc99b58ab, Jul 30 133004b c7e1de5c52bf) | SOTD: 0 pending | Trivia: 6 SKIPPED (overlap layout blocker, needs supervised template fix) | All OTD verified PASS | Sheet rows 268-269 updated | Pushed commit 0fde4fb | No aborts, no rate-limit issues
+Overnight batch complete. Everything shipped clean.
+
+## Summary ÔÇö 2026-07-17 overnight run
+
+| Type | Result |
+|------|--------|
+| **OTD** | Ô£à 2/2 generated, verified PASS, sheet updated, **pushed** (`0fde4fb`) |
+| **SOTD** | 0 pending ÔÇö nothing to do |
+| **Trivia** | ÔÜá´©Å 6 pending ÔÇö **SKIPPED** (standing overlap blocker) |
+
+**OTD images delivered (both `[PASS]`, fail-closed):**
+- `otd_2026-07-29_doors-to-jungkook-chart-magic.jpg` ÔÇö 127,487 b (`1b1cc99b58ab`), clean 3-line render
+- `otd_2026-07-30_wild-thing-about-damn-time-stones.jpg` ÔÇö 133,004 b (`c7e1de5c52bf`), clean 4-line render (curly apostrophe in "Lizzo's" preserved)
+
+**Pipeline state:**
+- Preflight confirmed placeholders before edits; template `DAG4Sliy2Zg` **reverted to clean placeholder state** (verified visually ÔÇö box back to 380.67px, date back to `{{Date}}`)
+- Sheet `OnThisDay Seeds` rows 268ÔÇô269 ÔåÆ `image_created=Yes` + public image URLs written
+- Committed + pushed via the sanctioned `commit -t otd -y` wrapper ÔåÆ `26536fa..0fde4fb` on `origin/main`, **no unpushed commits**
+- 268 total OTD images in repo
+
+**Trivia skipped (intentional):** `batch -t trivia` still emits `replace_text`-only ops with no position shifts, so long questions overlap the A/B/C options, and `verify` is hash-only ÔÇö it can't catch visual overlap. Left all 6 for a **supervised** template fix per the standing blocker.
+
+## Ôÿæ´©Å One thing for you when you wake
+
+The images are on `origin/main`. The follow-up bookkeeping is **left uncommitted** (commit-guard correctly blocks direct commit/push to main in an unattended session ÔÇö I did not work around it):
+- `verification.json` (2 new ledger entries), `otd_batch.json` (this run's batch), `last_run.log` (summary appended) ÔÇö plus the same three still carrying the Jul 15 run's unflushed changes
+
+Suggested when you're back:
+```
+git add verification.json otd_batch.json last_run.log && git commit -m "Update pipeline state: OTD Jul 29-30 (rows 268-269)" && git push
+```
+
+No aborts, no rate-limit hits, no auth failures. (The pre-existing untracked files ÔÇö `scripts/`, `Make Blueprints/`, the April `HANDOVER_*.md`, `__pycache__/` ÔÇö are unchanged and left as-is.)
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-07-17 02:06:05 ==========
+
+
+========== RUN STARTED 2026-07-20 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 3
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 268 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+2026-07-20T02:05Z | OTD: 3 generated (Jul 31 138086b 1a4818a2cabf, Aug 1 129221b ffc82b463b1e, Aug 2 137099b 72ae3cff68b7) | SOTD: 0 pending | Trivia: 6 SKIPPED (overlap layout blocker re-confirmed: batch still emits replace_text-only ops) | All OTD verified PASS | Sheet rows 270-272 updated (image_created + public URL) | Pushed commit f6e67ec | No aborts, no rate-limit issues
+Overnight batch complete. Everything shipped clean.
+
+## Summary ÔÇö 2026-07-20 overnight run
+
+| Type | Result |
+|------|--------|
+| **OTD** | 3/3 generated, verified PASS, sheet updated, **pushed** (`f6e67ec`) |
+| **SOTD** | 0 pending ÔÇö nothing to do |
+| **Trivia** | 6 pending ÔÇö **SKIPPED** (standing overlap blocker) |
+
+**OTD images delivered** (all `[PASS]`, fail-closed, each confirmed live at its `raw.githubusercontent.com` URL with HTTP 200 and matching byte count):
+- `otd_2026-07-31_summer-jams-to-chart-toppers.jpg` ÔÇö 138,086 b (`1a4818a2cabf`), clean 4-line render
+- `otd_2026-08-01_chart-toppers-august-1.jpg` ÔÇö 129,221 b (`ffc82b463b1e`), clean 4-line render (em dash + straight apostrophes preserved exactly as in the sheet)
+- `otd_2026-08-02_sweet-caroline-to-rihanna.jpg` ÔÇö 137,099 b (`72ae3cff68b7`), clean 4-line render
+
+**Pipeline integrity:**
+- Preflight confirmed both template fields at exact placeholder values before any edit
+- Per-item: edit ÔåÆ **commit** ÔåÆ export ÔåÆ download ÔåÆ `verify` ÔåÆ revert ÔåÆ commit. Never exported from a draft
+- Template `DAG4Sliy2Zg` left **reverted to clean placeholder state** (factoid box back to 380.67px, date back to `{{Date}}`) ÔÇö visually confirmed on the final revert
+- Sheet `OnThisDay Seeds` rows 270ÔÇô272: `image_created=Yes` + public image URLs written. The script reported "6 rows" ÔÇö I checked the sheet directly, that's 3 rows +ù 2 cells, no stray writes
+- OTD and SOTD queues now both **[DONE]**; 271 OTD images in repo; 0 unpushed commits
+
+**Trivia skipped ÔÇö and I re-verified rather than assuming:** regenerated the batch and inspected its op types. Still `replace_text`-only with no position shifts, so long questions would overlap the A/B/C options, and `verify` is hash-only ÔÇö it cannot catch visual overlap. Left all 6 for a supervised layout fix. I restored `trivia_batch.json` to its committed state afterwards so that check left no trace.
+
+## One thing for you when you wake
+
+The images are on `origin/main`. The follow-up bookkeeping is **left uncommitted** ÔÇö the commit guard correctly blocks direct commit/push to main in an unattended session, and I did not work around it:
+- `verification.json` (3 new ledger entries), `otd_batch.json` (this run's batch), `last_run.log` (summary appended)
+
+Suggested when you're back:
+```
+git add verification.json otd_batch.json last_run.log && git commit -m "Update pipeline state: OTD Jul 31-Aug 2 (rows 270-272)" && git push
+```
+
+No aborts, no rate-limit hits, no auth failures. Pre-existing untracked files (`scripts/`, `Make Blueprints/`, the three April `HANDOVER_*.md`, `__pycache__/`) are unchanged and left as-is ÔÇö note those April handovers are now three months stale and describe a template state that no longer applies; worth deleting when convenient.
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-07-20 02:05:11 ==========
+
+
+========== RUN STARTED 2026-07-22 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 271 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+2026-07-22T01:04:18Z | OTD: 2 generated (rows 273-274, Aug 3-4) all PASS, sheet updated, pushed 1b99cc5 | SOTD: 0 pending | Trivia: 6 pending SKIPPED (overlap blocker, needs supervised layout fix) | No aborts, no rate-limit issues
+Overnight batch complete. Summary:
+
+## Run summary ÔÇö 2026-07-22
+
+| Content | Result |
+|---------|--------|
+| **OTD** | 2 generated ÔåÆ **both PASS**, sheet updated, **pushed** (`1b99cc5`) |
+| **SOTD** | 0 pending |
+| **Trivia** | 6 pending ÔåÆ **skipped** (standing overlap blocker) |
+
+**OTD images shipped:**
+- `otd_2026-08-03_stacked-august-3-releases.jpg` ÔÇö 149,805 bytes, hash `96618278c2a0` (row 273)
+- `otd_2026-08-04_kinks-temptations-destinys-child-blast.jpg` ÔÇö 135,585 bytes, hash `aa2335b4884f` (row 274, curly apostrophe in "Destiny's" preserved)
+
+Both rendered cleanly (no overflow), template `DAG4Sliy2Zg` reverted to placeholder state and committed after each ÔÇö clean for next run. No aborts, no rate-limit hits, no re-auth needed. Well under the 30-image cap.
+
+**Trivia** skipped again ÔÇö `batch -t trivia` still emits replace_text-only ops, so long questions overlap the answer options, and `verify` can't catch visual overlap. Needs the supervised layout fix (bake the wide universal layout into the template, or add conditional position-shift ops) before it can run unattended. Backlog: 6 rows.
+
+**Needs your attention on waking ÔÇö pipeline-state files are modified but uncommitted** (the overnight guard blocks the bookkeeping commit to `main`):
+- `verification.json` (2 new PASS entries)
+- `otd_batch.json` (regenerated for rows 273ÔÇô274)
+- `last_run.log` (summary line appended)
+
+The images themselves are already on `origin/main`. When you're ready, commit those three files:
+```
+git add verification.json otd_batch.json last_run.log && git commit -m "Update pipeline state: OTD Aug 3-4 (rows 273-274)"
+```
+
+I also refreshed the trivia-overlap-blocker memory with tonight's re-confirmation.
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-07-22 02:04:48 ==========
+
+
+========== RUN STARTED 2026-07-24 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 273 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+2026-07-24T01:03:59Z | OTD: 2 generated (Aug 5 141580b ad22bb82ee05, Aug 6 139120b 82de47f4e04d) | SOTD: 0 pending | Trivia: 6 pending SKIPPED (overlap blocker, needs supervised layout fix) | All verified PASS | Sheet rows 275-276 updated | Pushed commit 98a191f | Template DAG4Sliy2Zg reverted to placeholders | No aborts, no rate-limit issues
+Overnight batch complete. Everything ran clean, no aborts, no rate-limit hits.
+
+## Summary ÔÇö 2026-07-24 overnight run
+
+| Type | Result |
+|------|--------|
+| **OTD** | Ô£à 2 generated, verified, pushed (`98a191f`) |
+| **SOTD** | ÔÇö 0 pending |
+| **Trivia** | ÔÅ¡´©Å 6 pending, **skipped** (standing overlap blocker) |
+
+**OTD images (both PASS, template reverted to placeholders):**
+- `otd_2026-08-05_revolver-miss-you-running-up-that-hill.jpg` ÔÇö 141,580 B, `ad22bb82ee05`
+- `otd_2026-08-06_beatles-help-sia-cheap-thrills.jpg` ÔÇö 139,120 B, `82de47f4e04d`
+
+Sheet `OnThisDay Seeds` rows 275ÔÇô276 marked `image_created=Yes`. Full fail-closed pipeline followed per each item: preflight ÔåÆ edit ÔåÆ commit ÔåÆ export q90 ÔåÆ download ÔåÆ verify ÔåÆ revert.
+
+**Trivia skipped (unchanged from Jul 22):** `batch -t trivia` still emits `replace_text`-only ops and `verify` can't catch visual overlap, so the 6 long-question cards would ship overlapping. Left pending for a **supervised** fix ÔÇö either bake the wide universal layout permanently into template `DAG32T-T8gU`, or add char-length-based position-shift ops to the trivia generator. Memory blocker updated.
+
+## ÔÜá´©Å Needs you when you wake
+
+Three pipeline-state files are modified but **uncommitted** ÔÇö the overnight commit guard blocks that bookkeeping commit unattended (the images themselves pushed fine via the python wrapper):
+
+```
+ M last_run.log
+ M otd_batch.json
+ M verification.json
+```
+
+Commit them when ready:
+```
+git add last_run.log otd_batch.json verification.json && git commit -m "Update pipeline state: OTD Aug 5-6 (rows 275-276)"
+```
+
+Nothing else unpushed ÔÇö `origin/main` is at `98a191f`.
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-07-24 02:04:21 ==========
+
+
+========== RUN STARTED 2026-07-27 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 3
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 275 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+## Summary â€” 2026-07-27 overnight run
+
+| Type | Result |
+|------|--------|
+| OTD | 3 generated, verified, pushed (86dd695) |
+| SOTD | 0 pending |
+| Trivia | 6 pending, SKIPPED (standing overlap blocker) |
+
+OTD images (all PASS, template reverted to placeholders after each):
+- otd_2026-08-07_soulful-breakups-and-elton-duets.jpg â€” 150,447 B, e5d0bf6d0535
+- otd_2026-08-08_chart-toppers-august-8.jpg â€” 130,639 B, f061920d8bcb
+- otd_2026-08-09_cash-bee-gees-sia-open-mic.jpg â€” 147,129 B, 4a85f0bddad3
+
+Sheet 'OnThisDay Seeds' rows 277-279 marked image_created=Yes (+ image URL col).
+Full fail-closed pipeline per item: preflight -> edit -> commit -> export q90 -> download -> verify -> revert -> commit.
+
+Trivia skipped: strum_automation.py:470-499 still emits replace_text-only ops; no
+position_element/resize_element shifts. verify is hash/bytes only and cannot detect
+visual overlap, so long-question cards would ship overlapping. Needs supervised fix.
+
+No rate-limit hits, no aborts. Budget: 3 of 30 images used.

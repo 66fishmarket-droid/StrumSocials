@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-07-13T01:11:24.067908+00:00",
+  "generated_at": "2026-07-27T01:01:00.160454+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,53 +33,53 @@
   ],
   "items": [
     {
-      "row": 263,
-      "post_date": "2026-07-24",
-      "filename": "otd_2026-07-24_eye-of-the-tiger-to-folklore",
+      "row": 277,
+      "post_date": "2026-08-07",
+      "filename": "otd_2026-08-07_soulful-breakups-and-elton-duets",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-toppers from Survivor, John Denver, and Taylor Swift all landed on this day!"
+          "text": "From Stevie Wonder’s soulful album drop to Elton John duets and Bee Gees heartbreak, August 7th grooves through music history."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 24"
+          "text": "August 7"
         }
       ]
     },
     {
-      "row": 264,
-      "post_date": "2026-07-25",
-      "filename": "otd_2026-07-25_back-in-black-and-beyond",
+      "row": 278,
+      "post_date": "2026-08-08",
+      "filename": "otd_2026-08-08_chart-toppers-august-8",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "AC/DC drops Back in Black, and a tidal wave of classic songs hits the charts!"
+          "text": "Taylor Swift, Madonna, and U2 top the charts on August 8 through the years!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 25"
+          "text": "August 8"
         }
       ]
     },
     {
-      "row": 265,
-      "post_date": "2026-07-26",
-      "filename": "otd_2026-07-26_chart-toppers-and-disco-fever",
+      "row": 279,
+      "post_date": "2026-08-09",
+      "filename": "otd_2026-08-09_cash-bee-gees-sia-open-mic",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-toppers and grooves: from Van McCoy’s disco fever to Peter Gabriel’s sledgehammer hit."
+          "text": "From Johnny Cash’s wild ‘A Boy Named Sue’ to Sia’s soaring ‘Chandelier’, August 9th brings iconic tunes across decades."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "July 26"
+          "text": "August 9"
         }
       ]
     }

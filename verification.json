@@ -868,5 +868,89 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-07-13T02:19:24.485231+00:00",
     "bytes": 137087
+  },
+  "otd_2026-07-27_highway-to-hell-to-rickroll": {
+    "hash": "324a41f39e2a851d96efe7617abf9c96dd94c418e08d34d72b6e873fc069361b",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-15T01:02:28.183405+00:00",
+    "bytes": 137662
+  },
+  "otd_2026-07-28_diamond-life-delilah-and-jackson": {
+    "hash": "cbff7a9e18cd01b31e6aac9846243b98a65cbec28447d346c37491e94332c09a",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-15T01:03:44.496584+00:00",
+    "bytes": 136472
+  },
+  "otd_2026-07-29_doors-to-jungkook-chart-magic": {
+    "hash": "1b1cc99b58abd6edc31ac581e97983df7fe377ea81142ff21019b07c0fb8a7df",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-17T01:03:08.834117+00:00",
+    "bytes": 127487
+  },
+  "otd_2026-07-30_wild-thing-about-damn-time-stones": {
+    "hash": "c7e1de5c52bfad1d760b5e0b20f4882f04a44de71e9fa9e09fee02812346e116",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-17T01:04:25.448509+00:00",
+    "bytes": 133004
+  },
+  "otd_2026-07-31_summer-jams-to-chart-toppers": {
+    "hash": "1a4818a2cabf16466335f7a153c021a788ef9820bea0c00ea428f84f59622a30",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-20T01:01:28.612142+00:00",
+    "bytes": 138086
+  },
+  "otd_2026-08-01_chart-toppers-august-1": {
+    "hash": "ffc82b463b1ebe788196e090cd7b61b35f4dd6b47b337f71c5c818e0340e6a30",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-20T01:02:30.143383+00:00",
+    "bytes": 129221
+  },
+  "otd_2026-08-02_sweet-caroline-to-rihanna": {
+    "hash": "72ae3cff68b7e8e8afd5b78df12215d962dd1335c37539ea245a60ec9ecae483",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-20T01:03:20.769286+00:00",
+    "bytes": 137099
+  },
+  "otd_2026-08-03_stacked-august-3-releases": {
+    "hash": "96618278c2a0e2a8ca182b66882867e1c9917b4ec2b46874fbddd66a25700858",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-22T01:02:23.089203+00:00",
+    "bytes": 149805
+  },
+  "otd_2026-08-04_kinks-temptations-destinys-child-blast": {
+    "hash": "aa2335b4884f031df56d1e58bf93dd0efecd2c9ff5984aae0a75ae1a2676bcf0",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-22T01:03:20.594066+00:00",
+    "bytes": 135585
+  },
+  "otd_2026-08-05_revolver-miss-you-running-up-that-hill": {
+    "hash": "ad22bb82ee05fcc5a4618d7cd3c26bebdc82a579e575de50b01369300d846484",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-24T01:02:23.311001+00:00",
+    "bytes": 141580
+  },
+  "otd_2026-08-06_beatles-help-sia-cheap-thrills": {
+    "hash": "82de47f4e04d71ee5d7b8dd5b8524e5df2b5b73531297b1cfb4430fc93985dfc",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-24T01:03:04.866514+00:00",
+    "bytes": 139120
+  },
+  "otd_2026-08-07_soulful-breakups-and-elton-duets": {
+    "hash": "e5d0bf6d05355d708db6d059ecc7a03158282680074b52a70cc8d3f3c65cc4a1",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-27T01:01:59.752937+00:00",
+    "bytes": 150447
+  },
+  "otd_2026-08-08_chart-toppers-august-8": {
+    "hash": "f061920d8bcbe1d94054bb9a7f1d57e43690b173feb74d5d5bc742d770284a0e",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-27T01:03:08.954325+00:00",
+    "bytes": 130639
+  },
+  "otd_2026-08-09_cash-bee-gees-sia-open-mic": {
+    "hash": "4a85f0bddad3e98591362ae8bc71cf65788e1dfd79f461eecac6590241c40988",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-27T01:04:10.127616+00:00",
+    "bytes": 147129
   }
 }
