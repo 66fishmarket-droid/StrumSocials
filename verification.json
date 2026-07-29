@@ -952,5 +952,17 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-07-27T01:04:10.127616+00:00",
     "bytes": 147129
+  },
+  "otd_2026-08-10_chart-toppers-and-legends": {
+    "hash": "3666dc9046d2dadbbc4acd80b6383c07036d0ae91766b76c0d812a39bf516106",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-29T01:02:02.332805+00:00",
+    "bytes": 126925
+  },
+  "otd_2026-08-11_ghostbusters-to-tubthumping": {
+    "hash": "d19434ee198da894e04dbf32937dc0d2e2c921203cc36059ba9341bcd12872a9",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-29T01:03:08.953268+00:00",
+    "bytes": 128137
   }
 }

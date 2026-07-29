@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-07-27T01:01:00.160454+00:00",
+  "generated_at": "2026-07-29T01:00:57.513051+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,53 +33,36 @@
   ],
   "items": [
     {
-      "row": 277,
-      "post_date": "2026-08-07",
-      "filename": "otd_2026-08-07_soulful-breakups-and-elton-duets",
+      "row": 280,
+      "post_date": "2026-08-10",
+      "filename": "otd_2026-08-10_chart-toppers-and-legends",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Stevie Wonder’s soulful album drop to Elton John duets and Bee Gees heartbreak, August 7th grooves through music history."
+          "text": "Chart-toppers and legendary album drops share the spotlight!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "August 7"
+          "text": "August 10"
         }
       ]
     },
     {
-      "row": 278,
-      "post_date": "2026-08-08",
-      "filename": "otd_2026-08-08_chart-toppers-august-8",
+      "row": 281,
+      "post_date": "2026-08-11",
+      "filename": "otd_2026-08-11_ghostbusters-to-tubthumping",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Taylor Swift, Madonna, and U2 top the charts on August 8 through the years!"
+          "text": "From Ghostbusters to Tubthumping, August 11 is a chart-topping day!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "August 8"
-        }
-      ]
-    },
-    {
-      "row": 279,
-      "post_date": "2026-08-09",
-      "filename": "otd_2026-08-09_cash-bee-gees-sia-open-mic",
-      "operations": [
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Johnny Cash’s wild ‘A Boy Named Sue’ to Sia’s soaring ‘Chandelier’, August 9th brings iconic tunes across decades."
-        },
-        {
-          "type": "replace_text",
-          "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "August 9"
+          "text": "August 11"
         }
       ]
     }
