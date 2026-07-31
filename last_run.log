@@ -2652,3 +2652,70 @@ Both `[PASS]` on `verify -t otd`. I also eyeballed each pre-commit thumbnail: ti
 **Note on the push:** local `main` was one commit ahead of origin (`5e90506`, the Jul 27 pipeline-state commit that never got pushed). The authorized image push carried it up to origin as well â€” that was a side effect of `commit -t otd -y`, not a separate decision.
 
 Pipeline-state commit for THIS run attempted below; result recorded there.
+Overnight run complete. Summary:
+
+**OTD ÔÇö 2/2 shipped.** Rows 280ÔÇô281 (Aug 10, Aug 11) generated, verified, sheet-updated, pushed as `1f0af58`.
+
+| Row | Date | Bytes | Hash |
+|-----|------|------:|------|
+| 280 | Aug 10 | 126,925 | 3666dc9046d2 |
+| 281 | Aug 11 | 128,137 | d19434ee198d |
+
+Both `[PASS]`. Since `verify` is hash/bytes-only, I also eyeballed each pre-commit thumbnail ÔÇö title/date/factoid stack cleanly, no overlap. Template `DAG4Sliy2Zg` reverted to placeholders after each item and confirmed back at base geometry. OTD queue is now drained.
+
+**SOTD ÔÇö** queue empty, nothing to do.
+
+**Trivia ÔÇö skipped, 6 rows still pending.** I checked the generator directly rather than trusting the standing note: `strum_automation.py:481-503` still emits four `replace_text` ops and zero position/resize ops. Long questions would still overlap the A/B/C options, and verification can't see it. Unchanged since June; still needs the supervised fix.
+
+**Two things for you:**
+
+1. **An older commit rode along on the push.** Local `main` was one ahead of origin ÔÇö `5e90506`, the Jul 27 pipeline-state commit that never got pushed. The authorized image push (`86dd695..1f0af58`) carried it to origin too. Side effect of `commit -t otd -y`, not a separate call I made, but you should know it's public now.
+
+2. **This run's state commit is local only** ÔÇö `29cf8ae` (`last_run.log`, `otd_batch.json`, `verification.json`). It went through this time; the classifier block isn't deterministic. Not pushed, per your ask-before-pushing rule:
+
+```
+git push
+```
+
+Minor find, no action needed: `strum_automation.py:614` prints `"Updated {len(cells_to_update)} rows"` but counts cells, so a 2-row update reports "4 rows". Cosmetic ÔÇö the right rows were touched.
+
+To unblock trivia next run, the decision is bake the wide layout (question `top=200, left=190, width=700`, options at 500/560/620/700) permanently into template `DAG32T-T8gU`, or add char-length position shifts to the generator. The template edit is the smaller change and makes future batches replace-text-only.
+
+Claude CLI exit code: 0
+========== RUN ENDED 2026-07-29 02:05:03 ==========
+
+
+========== RUN STARTED 2026-07-31 02:00:01 ==========
+============================================================
+Strum! Social Media Automation ù Pipeline Status
+============================================================
+
+[TODO] OnThisDay Seeds
+   Need generation: 2
+   Need sheet update: 0
+
+[DONE] Song Seeds
+   Need generation: 0
+   Need sheet update: 0
+
+[TODO] Trivia Seeds
+   Need generation: 6
+   Need sheet update: 0
+
+Local images: 280 OTD, 0 SOTD, 0 Trivia
+
+
+Launching Claude CLI...
+
+=== RUN 2026-07-31 ===
+OTD:    2 generated, 2 verified PASS, pushed (commit 9223653)
+        row 282 otd_2026-08-12_chart-toppers-and-dance-the-night (134,562 b, e3abc7be4a8e)
+        row 283 otd_2026-08-13_blowin-in-the-wind-beyonce-swift (135,566 b, a1da36184112)
+SOTD:   0 pending, nothing to do
+TRIVIA: 6 pending, SKIPPED - template overlap blocker still unfixed
+        (strum_automation.py:481-503 emits 4x replace_text, zero position/resize ops;
+         long questions wrap and overlap options A/B/C. Needs supervised layout fix.)
+Template reverted to placeholders after each item; preflight passed both times.
+Push note: bookkeeping commit 29cf8ae (prior run, OTD Aug 10-11) piggybacked on the
+authorized image push - range 1f0af58..9223653.
+Budget: 2 of 30 image cap used. No rate limits, no aborts.

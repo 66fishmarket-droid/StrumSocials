@@ -964,5 +964,17 @@
     "template": "DAG4Sliy2Zg",
     "verified_at": "2026-07-29T01:03:08.953268+00:00",
     "bytes": 128137
+  },
+  "otd_2026-08-12_chart-toppers-and-dance-the-night": {
+    "hash": "e3abc7be4a8ea06f799edc7454e02116fae2ac77bbf4da49bdcd888d0d7d7c09",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-31T01:01:55.209606+00:00",
+    "bytes": 134562
+  },
+  "otd_2026-08-13_blowin-in-the-wind-beyonce-swift": {
+    "hash": "a1da361841121f9772749fbd6337ddc5a13f66cefa90e22bab5481d37ffb009f",
+    "template": "DAG4Sliy2Zg",
+    "verified_at": "2026-07-31T01:03:15.871801+00:00",
+    "bytes": 135566
   }
 }

@@ -9,7 +9,7 @@
     "factoid": "{{bla bla bla bla bla \nbla vla bla bla bla bla bvla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla }}",
     "date": "{{Date}}"
   },
-  "generated_at": "2026-07-29T01:00:57.513051+00:00",
+  "generated_at": "2026-07-31T01:00:54.282952+00:00",
   "dry_run": false,
   "halt_after_first": false,
   "driver_protocol": [
@@ -33,36 +33,36 @@
   ],
   "items": [
     {
-      "row": 280,
-      "post_date": "2026-08-10",
-      "filename": "otd_2026-08-10_chart-toppers-and-legends",
+      "row": 282,
+      "post_date": "2026-08-12",
+      "filename": "otd_2026-08-12_chart-toppers-and-dance-the-night",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "Chart-toppers and legendary album drops share the spotlight!"
+          "text": "Chart-toppers and new music from Al Green to Dua Lipa light up this day in music history."
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "August 10"
+          "text": "August 12"
         }
       ]
     },
     {
-      "row": 281,
-      "post_date": "2026-08-11",
-      "filename": "otd_2026-08-11_ghostbusters-to-tubthumping",
+      "row": 283,
+      "post_date": "2026-08-13",
+      "filename": "otd_2026-08-13_blowin-in-the-wind-beyonce-swift",
       "operations": [
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBNG7Rtxtyzxqt2m",
-          "text": "From Ghostbusters to Tubthumping, August 11 is a chart-topping day!"
+          "text": "Anthems from Dylan covers to Beyoncé, Taylor Swift, and more hit the airwaves on this day!"
         },
         {
           "type": "replace_text",
           "element_id": "PBjpwX1gm3tngz74-LBR4TWdPrsSlKCqS",
-          "text": "August 11"
+          "text": "August 13"
         }
       ]
     }
